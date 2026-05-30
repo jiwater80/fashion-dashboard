@@ -1,9 +1,11 @@
 import WeeklyTrendChart from './WeeklyTrendChart';
 import { getProductRegistrationInfo, getTrendViewCartSeriesWithMeta, TREND_MAX_DAYS } from '../utils/itemAnalytics';
+import { SEASON } from '../config.js';
 
 export default function ItemDetailModal({ item, onClose }) {
   if (!item) return null;
-  const { name, brand, platform, tags = [], competitor_avg_price = 0, price = 0, ai_summary = [], key_details = [], cart_ratio = 0, view_count = 0, cart_count = 0, seasonality_match = 0, is_preorder = false, production_alert = false } = item;
+  const { name, brand, competitor_avg_price = 0, price = 0, ai_summary = [], key_details = [], cart_ratio = 0, view_count = 0, cart_count = 0, seasonality_match = 0, is_preorder = false, production_alert = false, metrics_estimated = false } = item;
+  const tLabel = `T-${SEASON.tMinusDays}`;
 
   const regInfo = getProductRegistrationInfo(item);
   const { series: trendSeries, meta: trendMeta } = getTrendViewCartSeriesWithMeta(item);
@@ -33,8 +35,18 @@ export default function ItemDetailModal({ item, onClose }) {
               JSON에 <code>product_registered_at</code>(YYYY-MM-DD)를 넣거나, 29CM·무신사 등 썸네일 URL에 포함된 날짜로 추정합니다.
             </p>
           )}
-          {production_alert && <div className="urgent-badge-inline">🚨 리드타임(T-45) 대응 요망 모델</div>}
+          {production_alert && <div className="urgent-badge-inline">🚨 리드타임({tLabel}) 대응 요망 모델</div>}
         </div>
+
+        {metrics_estimated && (
+          <div
+            className="modal-meta-fallback"
+            style={{ background: '#FFF8E1', border: '1px solid #FFE082', borderRadius: '8px', padding: '10px 12px', margin: '0 0 12px', fontSize: '12px', color: '#7a5c00' }}
+          >
+            ⓘ <strong>실측</strong>: 랭킹·상품명·이미지·가격{item.review_count != null ? '·리뷰수' : ''}.
+            아래 <strong>장바구니(CR)·유사도·조회·장바구니 수치는 추정 보조지표</strong>로, 실제 플랫폼 수치가 아닙니다.
+          </div>
+        )}
 
         <div className="modal-section alert-section">
           <h3 className="section-title">🔍 [잠복기 시그널] 종합 분석</h3>
@@ -44,7 +56,7 @@ export default function ItemDetailModal({ item, onClose }) {
                <strong style={{fontSize:'16px', color: '#D32F2F'}}>{cart_ratio}%</strong>
              </div>
              <div className="signal-item" style={{background: '#F9F9FB', padding: '12px', borderRadius: '8px', flex: 1}}>
-               <span style={{fontSize:'11px', color:'#666', display:'block', marginBottom: '4px'}}>작년 5월 유사도</span>
+               <span style={{fontSize:'11px', color:'#666', display:'block', marginBottom: '4px'}}>작년 {SEASON.monthLabel} 유사도</span>
                <strong style={{fontSize:'16px'}}>{seasonality_match}%</strong>
              </div>
              <div className="signal-item" style={{background: '#F9F9FB', padding: '12px', borderRadius: '8px', flex: 1}}>
@@ -85,7 +97,7 @@ export default function ItemDetailModal({ item, onClose }) {
         </div>
         
         <div className="modal-section">
-          <h3 className="section-title">✂️ T-45 유사 시즌 핵심 디자인 디테일 추출</h3>
+          <h3 className="section-title">✂️ {tLabel} 유사 시즌 핵심 디자인 디테일 추출</h3>
           <div className="tags-container">
             {key_details.map((detail, idx) => (
               <span key={idx} className="tag detail-tag" style={{background: 'rgba(210, 180, 140, 0.2)', color: '#8c6d46', fontWeight: 600}}>{detail}</span>

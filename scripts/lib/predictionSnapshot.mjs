@@ -4,24 +4,26 @@
  */
 
 import { parseProductRegistrationStart } from '../../src/utils/itemAnalytics.js';
+import { SEASON, PREDICTION, ITEMS_PER_PLATFORM, ACTIVE_PLATFORM_KEYS } from '../../src/config.js';
 
-export const PREDICTION_PLATFORMS = ['29CM', '무신사', '지그재그', 'W컨셉'];
+/** 활성 플랫폼만 예측 대상으로 (src/config.js 가 단일 출처) */
+export const PREDICTION_PLATFORMS = ACTIVE_PLATFORM_KEYS;
 
 /** 플랫폼별 후보 상한 (fetch-live 와 동기) */
-export const DEFAULT_ITEMS_PER_PLATFORM = 10;
+export const DEFAULT_ITEMS_PER_PLATFORM = ITEMS_PER_PLATFORM;
 
 /** 등록일(추정) 최대 일수 */
-export const RECENT_REG_MAX_DAYS = 56;
-export const RANK_EXCLUDE_TOP = 3;
+export const RECENT_REG_MAX_DAYS = PREDICTION.recentRegMaxDays;
+export const RANK_EXCLUDE_TOP = PREDICTION.rankExcludeTop;
 
-/** 5월(초여름) 대비 계절 키워드 — 모멘텀에 가중 */
-const SEASONAL_FOR_MAY = /린넨|반팔|시어|냉감/i;
+/** 시즌 계절 키워드 — 모멘텀에 가중 (src/config.js SEASON) */
+const SEASONAL_KEYWORDS = SEASON.seasonalKeywords;
 
 /** 아우터군 — 카테고리 필드 또는 상품명 */
-const OUTERWEAR = /자켓|재킷|점퍼|가디건|블루종|jacket|cardigan|jumper/i;
+const OUTERWEAR = PREDICTION.outerwear;
 
 /** 썸네일·경로 기반 신상 힌트 */
-const IMG_NEW_HINT = /summer|26ss|ss26|27ss|ss27/i;
+const IMG_NEW_HINT = PREDICTION.imgNewHint;
 
 function normUrl(u) {
   return String(u || '')
@@ -58,7 +60,7 @@ function isOuterwearRow(row) {
 }
 
 function hasSeasonalKeyword(row) {
-  return SEASONAL_FOR_MAY.test(String(row.name || ''));
+  return SEASONAL_KEYWORDS.test(String(row.name || ''));
 }
 
 function hasImgNewHint(row) {
@@ -76,11 +78,11 @@ export function scorePredictionRow(row, ctx, nowMs = Date.now()) {
   const signals = [];
 
   if (hasSeasonalKeyword(row)) {
-    score *= 1.2;
-    signals.push('초여름·쿨소재 키워드(5월 대비)');
+    score *= SEASON.seasonalBoost;
+    signals.push(`시즌 키워드(${SEASON.headerTitle.split(' ')[0]} 대비)`);
   }
   if (hasImgNewHint(row)) {
-    score *= 1.15;
+    score *= PREDICTION.imgNewHintBoost;
     signals.push('썸네일·경로 신상 힌트');
   }
 

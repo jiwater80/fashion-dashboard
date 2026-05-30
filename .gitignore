@@ -29,3 +29,9 @@ tmp.*
 q*.htm
 z*.htm
 zz*.html
+
+.vercel
+/.recon/
+
+# Claude Code local state (keep launch.json shared)
+.claude/settings.local.json

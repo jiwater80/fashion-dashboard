@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import TopItemCard from './components/TopItemCard';
 import ItemDetailModal from './components/ItemDetailModal';
 import { seoulDateKey, seoulOneMonthAgoDateKey } from './utils/seoulDateKey.js';
+import { SEASON, seasonSubtitle, PLATFORMS } from './config.js';
 // 과거 배열 대신 전체 히스토리 객체를 로드
 import historicalData from './historical_trends.json';
 import todayWomensRankings from './today_womens_rankings.json';
@@ -10,10 +11,9 @@ import './index.css';
 const LIVE_TAB = 'live';
 const PLATFORM_FILTERS = [
   { key: 'all', label: '전체' },
-  { key: '29CM', label: '29CM' },
-  { key: '무신사', label: '무신사' },
-  { key: '지그재그', label: '지그재그' },
-  { key: 'W컨셉', label: 'W컨셉' },
+  ...PLATFORMS.filter((p) => p.enabled)
+    .sort((a, b) => a.order - b.order)
+    .map((p) => ({ key: p.key, label: p.label })),
 ];
 
 function dedupeByProductUrl(rows) {
@@ -35,7 +35,8 @@ function App() {
   const [updateMsg, setUpdateMsg] = useState('');
   const isDevRuntime = import.meta.env.DEV;
   const actionsUrl =
-    import.meta.env.VITE_ACTIONS_URL || 'https://github.com/<owner>/<repo>/actions/workflows/daily-fetch.yml';
+    import.meta.env.VITE_ACTIONS_URL ||
+    'https://github.com/jiwater80/fashion-dashboard/actions/workflows/daily-fetch.yml';
   const todayKey = seoulDateKey();
   const monthAgoKey = seoulOneMonthAgoDateKey();
 
@@ -77,7 +78,7 @@ function App() {
       return historicalData[monthAgoKey] || [];
     }
     return [];
-  }, [isLiveTab, activeTab, todayKey, monthAgoKey, historicalData]);
+  }, [isLiveTab, activeTab, todayKey, monthAgoKey]);
 
   const openModal = (item) => {
     setSelectedItem(item);
@@ -117,9 +118,9 @@ function App() {
   return (
     <div className="app-container">
       <header className="header">
-        <div className="header-subtitle">Fashion Intelligence : T-45 Production Dashboard</div>
-        <h1 className="header-title"><strong>5월 타겟 (초여름) 예측 히스토리</strong></h1>
-        <p style={{fontSize: '11px', color: '#D32F2F', marginTop: '6px', fontWeight: 'bold'}}>F/W 제외 | 코어 카테고리 한정 | 7일 급상승 추적</p>
+        <div className="header-subtitle">{seasonSubtitle(SEASON)}</div>
+        <h1 className="header-title"><strong>{SEASON.headerTitle}</strong></h1>
+        <p style={{fontSize: '11px', color: '#D32F2F', marginTop: '6px', fontWeight: 'bold'}}>{SEASON.tagline}</p>
         <div className="fetch-row">
           <button type="button" className="fetch-btn" onClick={runFetchLive} disabled={isUpdating && isDevRuntime}>
             {isDevRuntime ? (isUpdating ? '업데이트 중...' : '크롤링/업데이트') : '자동 업데이트(매일 08:00 KST)'}
