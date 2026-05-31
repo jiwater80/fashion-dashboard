@@ -23,6 +23,10 @@ jobs:
 
       - run: npm ci
 
+      # 퀸잇 어댑터가 헤드리스 브라우저 사용 → Chromium 설치
+      - name: Install Chromium for Playwright
+        run: npx playwright install --with-deps chromium
+
       # 부분 실패(exit 2)여도 모은 데이터는 저장됨 → 커밋은 항상 시도하고, 실패 여부만 기록
       - name: Fetch rankings
         id: fetch

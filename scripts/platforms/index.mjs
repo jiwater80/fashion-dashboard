@@ -7,13 +7,15 @@ import * as musinsa from './musinsa.mjs';
 import * as cm29 from './29cm.mjs';
 import * as zigzag from './zigzag.mjs';
 import * as wconcept from './wconcept.mjs';
+import * as queenit from './queenit.mjs';
 
 const REGISTRY = {
   musinsa,
   '29cm': cm29,
   zigzag,
   wconcept,
-  // Phase 3: ably, brandi, queenit
+  queenit,
+  // 향후: ably, brandi
 };
 
 export function getAdapter(name) {

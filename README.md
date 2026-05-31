@@ -8,10 +8,12 @@
 매일 08:00 KST (`.github/workflows/daily-fetch.yml`, UTC 23:00 cron)에 `npm run fetch:live` 실행:
 
 1. **플랫폼별 어댑터**(`scripts/platforms/<name>.mjs`)로 오늘 랭킹 수집
-   - **무신사**: 공개 랭킹 API로 상품 목록 자체를 실시간 수집(진짜 랭킹).
-   - **29CM**: display-bff-api 베스트 API(POST)로 여성의류 실시간 베스트 수집(진짜 랭킹, `data_source='29cm_best_api'`).
-   - **지그재그·W컨셉**: 현재는 시드 고정 + PDP 메타(이름·이미지·가격) 갱신
-     (`data_source='seed_pdp_refresh'`). 지그재그는 웹이 앱-게이트라 헤드리스/앱 GraphQL 필요(Phase 3).
+   - **실시간(`live:true`)** — 오늘 실제 랭킹을 수집. UI에 초록 `● 실시간` 배지.
+     - **무신사**: 공개 랭킹 API (`musinsa_ranking_api`).
+     - **29CM**: display-bff-api 베스트 API(POST) 여성의류 실시간 (`29cm_best_api`).
+     - **퀸잇**: 랭킹 페이지를 헤드리스(Playwright)로 띄워 `general-products` 응답 수확 (`queenit_ranking_harvest`). 리뷰수·평점은 실측.
+   - **참고(`live:false`)** — 랭킹이 앱 전용(지그재그)·안티봇(W컨셉)이라 실시간 수집 불가. 시드 고정 + PDP 메타만 갱신 (`seed_pdp_refresh`). UI에 회색 `참고` 배지.
+   - 미도입: 브랜디(봇 방어로 상품 목록 미노출), 에이블리(UA 403).
 2. `src/today_womens_rankings.json` ← 플랫폼별 오늘 랭킹
 3. `src/historical_trends.json[오늘]` ← `scripts/lib/predictionSnapshot.mjs` 가 산출한 떡상 후보 스냅샷
 4. 변경분을 봇이 커밋·푸시. 수집 실패/부분 실패 시 GitHub 이슈로 알림(`crawl-failure` 라벨).

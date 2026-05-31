@@ -38,15 +38,17 @@ export function seasonSubtitle(season = SEASON) {
  * enabled=false 면 크롤·예측·필터에서 모두 제외(신규 플랫폼 단계적 도입용).
  * adapter = scripts/platforms/<adapter>.mjs 파일명(크롤 어댑터). 프론트는 무시.
  */
+// live: true = 오늘 실제 랭킹을 실시간 수집 / false = 시드 고정 + 메타만 갱신(참고용)
 export const PLATFORMS = [
-  { key: '29CM', label: '29CM', order: 1, enabled: true, adapter: '29cm' },
-  { key: '무신사', label: '무신사', order: 2, enabled: true, adapter: 'musinsa' },
-  { key: '지그재그', label: '지그재그', order: 3, enabled: true, adapter: 'zigzag' },
-  { key: 'W컨셉', label: 'W컨셉', order: 4, enabled: true, adapter: 'wconcept' },
-  // Phase 3 도입 예정 — 로엠 타겟 고객층 플랫폼
-  { key: '에이블리', label: '에이블리', order: 5, enabled: false, adapter: 'ably' },
-  { key: '브랜디', label: '브랜디', order: 6, enabled: false, adapter: 'brandi' },
-  { key: '퀸잇', label: '퀸잇', order: 7, enabled: false, adapter: 'queenit' },
+  { key: '29CM', label: '29CM', order: 1, enabled: true, live: true, adapter: '29cm' },
+  { key: '무신사', label: '무신사', order: 2, enabled: true, live: true, adapter: 'musinsa' },
+  { key: '퀸잇', label: '퀸잇', order: 3, enabled: true, live: true, adapter: 'queenit' },
+  // 참고용: 랭킹이 앱 전용(지그재그)·안티봇(W컨셉)이라 실시간 수집 불가 → 시드 + 메타 갱신
+  { key: '지그재그', label: '지그재그', order: 4, enabled: true, live: false, adapter: 'zigzag' },
+  { key: 'W컨셉', label: 'W컨셉', order: 5, enabled: true, live: false, adapter: 'wconcept' },
+  // 미도입(차단/미구현)
+  { key: '에이블리', label: '에이블리', order: 6, enabled: false, live: false, adapter: 'ably' },
+  { key: '브랜디', label: '브랜디', order: 7, enabled: false, live: false, adapter: 'brandi' },
 ];
 
 /** 활성 플랫폼 key 목록 (화면 정렬 순) */

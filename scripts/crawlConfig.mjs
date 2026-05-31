@@ -38,6 +38,16 @@ export const C29CM = {
   },
 };
 
+/**
+ * 퀸잇 — 랭킹 페이지를 헤드리스로 띄워 api.queenit.kr/general-products 응답을 수확.
+ * CSR(클라이언트 렌더)이라 fetch로는 빈 화면 → 브라우저 필요. 응답에 rank·brand·name·finalPrice·reviewCount·reviewRatingAvg 포함.
+ */
+export const QUEENIT = {
+  rankingPageUrl: 'https://queenit.kr/category/ranking',
+  apiMatch: /\/general-products/,
+  productUrlBase: 'https://web.queenit.kr/products/',
+};
+
 /** 플랫폼별 PDP 갱신 간 지연(ms) — 과도한 요청 방지 */
 export const PDP_DELAY_MS = 400;
 
