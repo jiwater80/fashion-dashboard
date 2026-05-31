@@ -48,6 +48,23 @@ export const QUEENIT = {
   productUrlBase: 'https://web.queenit.kr/products/',
 };
 
+/**
+ * W컨셉 베스트(랭킹) API — display-bff 직접 POST (브라우저 불필요).
+ * 웹 프론트(/women/best)는 안티봇이지만 BFF는 정적 display-api-key 헤더만 있으면 서버에서 직접 호출됨.
+ * domain:WOMEN, dateType:daily = 여성 일간 랭킹. 응답에 heartCnt(찜)·reviewCnt·reviewScore 실측 포함.
+ * ⚠️ apiKey는 사이트에 박힌 정적 키 — 회전되면 401/403 → 어댑터가 시드 PDP로 폴백.
+ */
+export const WCONCEPT = {
+  apiUrl: 'https://gw-front.wconcept.co.kr/display/api/best/v1/product',
+  apiKey: 'VWmkUPgs6g2fviPZ5JQFQ3pERP4tIXv/J2jppLqSRBk=',
+  origin: 'https://display.wconcept.co.kr',
+  referer: 'https://display.wconcept.co.kr/',
+  body: {
+    custNo: '0', domain: 'WOMEN', genderType: 'all', dateType: 'daily',
+    ageGroup: 'all', depth1Code: 'ALL', depth2Code: 'ALL', pageSize: 100, pageNo: 1,
+  },
+};
+
 /** 플랫폼별 PDP 갱신 간 지연(ms) — 과도한 요청 방지 */
 export const PDP_DELAY_MS = 400;
 

@@ -11,8 +11,9 @@
    - **실시간(`live:true`)** — 오늘 실제 랭킹을 수집. UI에 초록 `● 실시간` 배지.
      - **무신사**: 공개 랭킹 API (`musinsa_ranking_api`).
      - **29CM**: display-bff-api 베스트 API(POST) 여성의류 실시간 (`29cm_best_api`).
-     - **퀸잇**: 랭킹 페이지를 헤드리스(Playwright)로 띄워 `general-products` 응답 수확 (`queenit_ranking_harvest`). 리뷰수·평점은 실측.
-   - **참고(`live:false`)** — 랭킹이 앱 전용(지그재그)·안티봇(W컨셉)이라 실시간 수집 불가. 시드 고정 + PDP 메타만 갱신 (`seed_pdp_refresh`). UI에 회색 `참고` 배지.
+     - **W컨셉**: display-bff 베스트 API(POST, `display-api-key` 헤더) 여성 일간 베스트 (`wconcept_best_api`). 웹은 안티봇이지만 BFF는 정적 키로 직접 호출. 찜수·리뷰 실측.
+     - **퀸잇**: 랭킹 페이지를 헤드리스(Playwright)로 띄워 `general-products` 응답 수확 (`queenit_ranking_harvest`). 리뷰수·평점 실측.
+   - **참고(`live:false`)** — 지그재그는 랭킹이 앱 전용(웹·모바일웹 모두 빈 화면)이라 실시간 수집 불가. 시드 고정 + PDP 메타만 갱신 (`seed_pdp_refresh`). UI에 회색 `참고` 배지.
    - 미도입: 브랜디(봇 방어로 상품 목록 미노출), 에이블리(UA 403).
 2. `src/today_womens_rankings.json` ← 플랫폼별 오늘 랭킹
 3. `src/historical_trends.json[오늘]` ← `scripts/lib/predictionSnapshot.mjs` 가 산출한 떡상 후보 스냅샷
