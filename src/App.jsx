@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import TopItemCard from './components/TopItemCard';
 import ItemDetailModal from './components/ItemDetailModal';
 import { seoulDateKey, seoulOneMonthAgoDateKey } from './utils/seoulDateKey.js';
+import { orderedCategories, matchesItemCategory } from './utils/itemCategory.js';
 import { SEASON, seasonSubtitle, PLATFORMS } from './config.js';
 // 과거 배열 대신 전체 히스토리 객체를 로드
 import historicalData from './historical_trends.json';
@@ -51,6 +52,8 @@ function App() {
 
   const [activeTab, setActiveTab] = useState(todayKey);
   const [livePlatform, setLivePlatform] = useState('all');
+  const [itemCategory, setItemCategory] = useState('all');
+  const CATEGORY_TABS = useMemo(() => [{ key: 'all', label: '전체' }, ...orderedCategories()], []);
 
   const isLiveTab = activeTab === LIVE_TAB;
 
@@ -112,8 +115,21 @@ function App() {
     }
   };
 
-  const currentTrends = isLiveTab ? liveItems : predictionItems;
+  // 품목 필터 이전의 기준 목록(플랫폼·탭까지 반영됨) → 여기서 품목별 개수도 계산
+  const baseTrends = isLiveTab ? liveItems : predictionItems;
+  const categoryCounts = useMemo(() => {
+    const counts = { all: baseTrends.length };
+    for (const { key } of CATEGORY_TABS) {
+      if (key === 'all') continue;
+      counts[key] = baseTrends.reduce((n, it) => n + (matchesItemCategory(it, key) ? 1 : 0), 0);
+    }
+    return counts;
+  }, [baseTrends, CATEGORY_TABS]);
+
+  const currentTrends =
+    itemCategory === 'all' ? baseTrends : baseTrends.filter((it) => matchesItemCategory(it, itemCategory));
   const showTodayPredictionChrome = !isLiveTab && activeTab === todayKey;
+  const activeCategoryLabel = CATEGORY_TABS.find((c) => c.key === itemCategory)?.label || '';
 
   return (
     <div className="app-container">
@@ -134,6 +150,44 @@ function App() {
         </div>
       </header>
       
+      {/* 품목(아이템) 분류 탭 — 맨 위, 실시간·예측 공통 적용 */}
+      <div style={{ padding: '0 16px 10px' }}>
+        <div style={{ fontSize: '11px', fontWeight: 700, color: '#888', margin: '0 0 6px 2px', letterSpacing: '0.02em' }}>
+          품목별 보기
+        </div>
+        <div style={{ display: 'flex', gap: '6px', overflowX: 'auto', flexWrap: 'nowrap', paddingBottom: '2px' }}>
+          {CATEGORY_TABS.map(({ key, label }) => {
+            const n = categoryCounts[key] ?? 0;
+            const active = itemCategory === key;
+            const disabled = key !== 'all' && n === 0;
+            return (
+              <button
+                type="button"
+                key={key}
+                onClick={() => setItemCategory(key)}
+                disabled={disabled}
+                style={{
+                  flex: '0 0 auto',
+                  padding: '7px 13px',
+                  borderRadius: '18px',
+                  border: active ? '1px solid #111' : '1px solid #ddd',
+                  fontSize: '13px',
+                  fontWeight: active ? 800 : 600,
+                  cursor: disabled ? 'default' : 'pointer',
+                  whiteSpace: 'nowrap',
+                  backgroundColor: active ? '#111' : disabled ? '#f5f5f5' : '#fff',
+                  color: active ? '#fff' : disabled ? '#c4c4c4' : '#333',
+                  transition: 'all 0.15s',
+                }}
+              >
+                {label}
+                <span style={{ marginLeft: '5px', fontSize: '11px', opacity: active ? 0.85 : 0.5 }}>{n}</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
       {/* 오늘 실시간 랭킹 + 날짜별 떡상 예측 탭 */}
       <div className="tabs-container" style={{display: 'flex', gap: '8px', padding: '0 16px 16px', overflowX: 'auto', flexWrap: 'wrap'}}>
         <button
@@ -225,11 +279,13 @@ function App() {
           ))
         ) : (
           <p style={{textAlign:'center', marginTop:'40px', color: '#999'}}>
-            {isLiveTab
-              ? '선택한 플랫폼에 표시할 랭킹이 없습니다. npm run fetch:live 로 데이터를 갱신해 보세요.'
-              : activeTab === monthAgoKey
-                ? `한달 전(${monthAgoKey})에 저장된 스냅샷이 없습니다. 그날 npm run fetch:live(또는 자동 스케줄)로 쌓인 뒤 여기에 표시됩니다.`
-                : '오늘 떡상 후보 스냅샷이 없습니다. npm run fetch:live 를 실행하면 랭킹과 별도 후보 목록이 historical 에 저장됩니다.'}
+            {itemCategory !== 'all' && baseTrends.length > 0
+              ? `'${activeCategoryLabel}' 품목에 해당하는 상품이 없습니다. 다른 품목을 선택해 보세요.`
+              : isLiveTab
+                ? '선택한 플랫폼에 표시할 랭킹이 없습니다. npm run fetch:live 로 데이터를 갱신해 보세요.'
+                : activeTab === monthAgoKey
+                  ? `한달 전(${monthAgoKey})에 저장된 스냅샷이 없습니다. 그날 npm run fetch:live(또는 자동 스케줄)로 쌓인 뒤 여기에 표시됩니다.`
+                  : '오늘 떡상 후보 스냅샷이 없습니다. npm run fetch:live 를 실행하면 랭킹과 별도 후보 목록이 historical 에 저장됩니다.'}
           </p>
         )}
       </main>
