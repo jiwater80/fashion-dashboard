@@ -15,7 +15,7 @@ export const SEASON = {
   /** 타겟 월 라벨 (모달 '작년 N월 유사도' 등에 사용) */
   monthLabel: '5월',
   /** 화면 헤더 큰 제목 */
-  headerTitle: '5월 타겟 (초여름) 예측 히스토리',
+  headerTitle: '여성의류 플랫폼 실시간 랭킹',
   /** 헤더 상단 영문 서브타이틀 (T-N 자동 반영) */
   subtitlePrefix: 'Fashion Intelligence',
   /** 빨간 강조 한 줄 */

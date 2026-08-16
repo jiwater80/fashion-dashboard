@@ -17,11 +17,12 @@ export const ITEM_CATEGORIES = [
   { key: '바지', label: '바지', re: /바지|팬츠|슬랙스|조거|레깅스|반바지|숏\s?팬츠|버뮤다|와이드\s?팬츠|pants|slacks|trousers|jogger|leggings|shorts/i },
   { key: '니트', label: '스웨터(니트)', re: /니트|스웨터|가디건|풀오버|knit|sweater|cardigan|pullover/i },
   { key: '티셔츠', label: '티셔츠', re: /티셔[츠트]|반팔|반소매|민소매|나시|탱크|튜브\s?탑|홀터|뷔스티에|비스티에|슬리브리스|캐미솔|크롭\s?티|피케|tee|t-?shirt|sleeveless|tank|camisole|halter/i },
-  { key: '블라우스', label: '블라우스', re: /블라우스|셔츠|남방|blouse|shirt/i },
+  { key: '셔츠', label: '셔츠', re: /셔츠|남방|shirt/i },
+  { key: '블라우스', label: '블라우스', re: /블라우스|blouse/i },
 ];
 
-/** 화면 필터용 순서(사용자 지정) — 코트/다운/자켓/블라우스/티셔츠/원피스/스웨터(니트)/바지/청바지/스커트 */
-export const CATEGORY_DISPLAY_ORDER = ['코트', '다운', '자켓', '블라우스', '티셔츠', '원피스', '니트', '바지', '청바지', '스커트'];
+/** 화면 필터용 순서(사용자 지정) — 코트/다운/자켓/블라우스/셔츠/티셔츠/원피스/스웨터(니트)/바지/청바지/스커트 */
+export const CATEGORY_DISPLAY_ORDER = ['코트', '다운', '자켓', '블라우스', '셔츠', '티셔츠', '원피스', '니트', '바지', '청바지', '스커트'];
 
 /**
  * 상품을 품목 key 하나로 분류. 매칭 없으면 null.
