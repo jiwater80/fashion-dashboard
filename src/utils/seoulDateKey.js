@@ -12,6 +12,29 @@ export function seoulDateKey(date = new Date()) {
   return `${y}.${m}.${d}`;
 }
 
+/** 서울 달력 기준 한 달 후 같은 날(없으면 익월 말일). 예: 8.16 → 9.16, 1.31 → 2.28 */
+export function seoulOneMonthLaterDateKey(date = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Seoul',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(date);
+  const y = parseInt(parts.find((p) => p.type === 'year').value, 10);
+  const mo = parseInt(parts.find((p) => p.type === 'month').value, 10);
+  const d = parseInt(parts.find((p) => p.type === 'day').value, 10);
+
+  let ty = y;
+  let tm = mo + 1;
+  if (tm > 12) {
+    tm = 1;
+    ty += 1;
+  }
+  const lastDay = new Date(ty, tm, 0).getDate();
+  const dd = Math.min(d, lastDay);
+  return `${ty}.${String(tm).padStart(2, '0')}.${String(dd).padStart(2, '0')}`;
+}
+
 /** 서울 달력 기준 한 달 전 같은 날(없으면 전월 말일). 예: 4.6 → 3.6, 3.31 → 2.28 */
 export function seoulOneMonthAgoDateKey(date = new Date()) {
   const parts = new Intl.DateTimeFormat('en-CA', {

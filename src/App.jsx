@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import TopItemCard from './components/TopItemCard';
 import ItemDetailModal from './components/ItemDetailModal';
-import { seoulDateKey, seoulOneMonthAgoDateKey } from './utils/seoulDateKey.js';
+import { seoulDateKey, seoulOneMonthAgoDateKey, seoulOneMonthLaterDateKey } from './utils/seoulDateKey.js';
 import { orderedCategories, matchesItemCategory } from './utils/itemCategory.js';
 import { SEASON, seasonSubtitle, PLATFORMS } from './config.js';
 // 과거 배열 대신 전체 히스토리 객체를 로드
@@ -40,15 +40,20 @@ function App() {
     'https://github.com/jiwater80/fashion-dashboard/actions/workflows/daily-fetch.yml';
   const todayKey = seoulDateKey();
   const monthAgoKey = seoulOneMonthAgoDateKey();
+  const targetKey = seoulOneMonthLaterDateKey(); // 오늘 예측의 타겟(1달 후)
 
-  /** 오늘 스냅샷(매일 fetch로 누적) + 한 달 전 같은 날 스냅샷만 — 정확도 피드백용 2탭 */
+  /**
+   * 탭은 예측을 "만든 날"(todayKey/monthAgoKey)로 데이터를 찾되, 라벨은 "타겟 날짜(1달 후)"로 보여준다.
+   * - 오늘 예측: 타겟 = 1달 후(targetKey).
+   * - 지난달 예측: 타겟 = 오늘(todayKey) → 적중 여부를 오늘 랭킹과 대조하는 검증용.
+   */
   const predictionTabs = useMemo(() => {
-    const tabs = [{ key: todayKey, label: `${todayKey} 떡상 예측` }];
+    const tabs = [{ key: todayKey, label: `${targetKey} 떡상 예측` }];
     if (monthAgoKey !== todayKey) {
-      tabs.push({ key: monthAgoKey, label: `한달 전 (${monthAgoKey}) 떡상 예측` });
+      tabs.push({ key: monthAgoKey, label: `지난달 예측 (타겟 ${todayKey}) 검증` });
     }
     return tabs;
-  }, [todayKey, monthAgoKey]);
+  }, [todayKey, monthAgoKey, targetKey]);
 
   const [activeTab, setActiveTab] = useState(todayKey);
   const [livePlatform, setLivePlatform] = useState('all');
