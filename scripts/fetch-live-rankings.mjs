@@ -104,6 +104,8 @@ async function main() {
   const mergedPool = mergeRankingPoolWithNewArrivals(final, newArrivalRows);
   historical[dayKey] = buildPredictionSnapshotFromRanking(mergedPool, {
     itemsPerPlatform: ITEMS_PER_PLATFORM,
+    history: historical, // 과거 스냅샷 대조 → 순위 상승속도·관심 급증 계산
+    todayKey: dayKey,
   });
 
   const sortedKeys = Object.keys(historical)

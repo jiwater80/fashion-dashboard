@@ -2,7 +2,7 @@ import './compact.css';
 import { SEASON } from '../config.js';
 
 export default function TopItemCard({ item, rank, onClick, showPredictionChrome = false }) {
-  const { name, brand, platform, img_url, cart_ratio, production_alert, success_prob, prediction_hint, roem_copy_priority, metrics_estimated, data_source } = item;
+  const { name, brand, platform, img_url, cart_ratio, production_alert, success_prob, prediction_hint, roem_copy_priority, metrics_estimated, data_source, prediction_momentum_score, prediction_velocity_delta, prediction_growth_pct } = item;
 
   const cardClassName = `top-item-card compact-card ${production_alert ? 'urgent-border' : ''}`;
   const tLabel = `T-${SEASON.tMinusDays}`;
@@ -49,8 +49,23 @@ export default function TopItemCard({ item, rank, onClick, showPredictionChrome 
           <span className="roem-priority-pill">로엠 카피 우선</span>
         )}
         <div className="compact-stats" title={estTitle}>
-          <span className="prob-text">{Math.round(success_prob)}점{metrics_estimated && <sup style={{ fontSize: '8px', color: '#999' }}>추정</sup>}</span>
-          <span className="cr-text increase">CR {cart_ratio}%</span>
+          {showPredictionChrome && prediction_momentum_score != null ? (
+            <>
+              <span className="prob-text" title="순위상승·관심급증·신상침투 조합 점수">🔥 떡상 {prediction_momentum_score}점</span>
+              {prediction_velocity_delta > 0 ? (
+                <span className="cr-text increase">순위 +{prediction_velocity_delta}↑</span>
+              ) : prediction_growth_pct > 0 ? (
+                <span className="cr-text increase">관심 +{prediction_growth_pct}%</span>
+              ) : (
+                <span className="cr-text" style={{ color: '#aaa' }}>추세 집계중</span>
+              )}
+            </>
+          ) : (
+            <>
+              <span className="prob-text">{Math.round(success_prob)}점{metrics_estimated && <sup style={{ fontSize: '8px', color: '#999' }}>추정</sup>}</span>
+              <span className="cr-text increase">CR {cart_ratio}%</span>
+            </>
+          )}
         </div>
       </div>
     </article>

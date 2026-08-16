@@ -22,10 +22,10 @@ export const SEASON = {
   tagline: 'F/W 제외 | 코어 카테고리 한정 | 7일 급상승 추적',
   /** 생산 리드타임(일). 서브타이틀의 "T-45" 및 production 알림 기준 */
   tMinusDays: 45,
-  /** 시즌 키워드 — 예측 모멘텀에 가중(초여름·쿨소재) */
-  seasonalKeywords: /린넨|린네|반팔|시어|냉감|시폰|메시|아이스|쿨/i,
-  /** 시즌 키워드 매칭 시 모멘텀 배수 */
-  seasonalBoost: 1.2,
+  /** 시즌 키워드 — 예측 점수에 가중. 타겟이 1달 후라 '초가을·간절기' 키워드 */
+  seasonalKeywords: /니트|가디건|자[켓캣]|재[킷킷켓]|트렌치|코듀로이|기모|스웨이드|긴소매|간절기|맨투맨|후드|자켓|점퍼/i,
+  /** 시즌 키워드 매칭 시 점수 배수 */
+  seasonalBoost: 1.15,
 };
 
 /** 서브타이틀 전체 문자열 (예: "Fashion Intelligence : T-45 Production Dashboard") */
@@ -59,7 +59,14 @@ export const ACTIVE_PLATFORM_KEYS = PLATFORMS.filter((p) => p.enabled)
 /** 플랫폼별 오늘 랭킹 노출·수집 상한 */
 export const ITEMS_PER_PLATFORM = 10;
 
-/** 예측 스코어링 상수 */
+/**
+ * 예측 스코어링 — "1달 후 폭발할 아이템"을 신호 3개의 조합으로 산출.
+ *  ① 순위 상승속도(rankVelocity): 최근 N일간 플랫폼 순위가 얼마나 빠르게 올랐나.
+ *  ② 관심 급증(interestGrowth): 찜·리뷰 수가 최근 얼마나 늘었나(실측 지표 있는 플랫폼).
+ *  ③ 신상 침투(newness): 신규 등록/신규 진입인데 벌써 상위권.
+ * 추세(①②)는 과거 스냅샷(historical_trends.json) 대조로 계산 → 데이터 누적 1~2주 뒤 완전 발동.
+ * 그 전(콜드스타트)에는 ③ + 실측 지표 크기 + 시즌 가중으로 동작.
+ */
 export const PREDICTION = {
   /** 등록일(추정) 최대 일수 — 이 안쪽이면 '신상' 후보 풀 */
   recentRegMaxDays: 56,
@@ -68,6 +75,22 @@ export const PREDICTION = {
   /** 아우터군 — 카테고리 필드 또는 상품명 */
   outerwear: /자켓|재킷|점퍼|가디건|블루종|jacket|cardigan|jumper/i,
   /** 썸네일·경로 기반 신상 힌트 */
-  imgNewHint: /summer|26ss|ss26|27ss|ss27/i,
-  imgNewHintBoost: 1.15,
+  imgNewHint: /summer|26ss|ss26|27ss|ss27|fall|autumn|25fw|fw25|26fw|fw26/i,
+  imgNewHintBoost: 1.1,
+
+  /** 추세 계산 시 과거 며칠 전과 비교할지 */
+  velocityLookbackDays: 7,
+  /** 이 일수 안에 처음 등장/등록이면 '신상'으로 */
+  newnessWindowDays: 14,
+  /**
+   * 신호 가중치(사용 가능한 것만 재정규화).
+   * 추세(velocity·growth)는 데이터 누적 후 발동 → 그 전엔 currentRank·interestLevel·newness가 정렬을 담당.
+   */
+  weights: {
+    rankVelocity: 0.35, // ① 순위 상승속도 (추세)
+    interestGrowth: 0.2, // ② 찜·리뷰 급증 (추세)
+    newness: 0.2, // ③ 신상 침투
+    currentRank: 0.15, // 현재 순위(실측 인기) — 콜드스타트 기본
+    interestLevel: 0.1, // 찜·리뷰 규모(검증된 관심) — 콜드스타트 기본
+  },
 };
