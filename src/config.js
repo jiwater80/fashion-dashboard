@@ -44,8 +44,8 @@ export const PLATFORMS = [
   { key: '무신사', label: '무신사', order: 2, enabled: true, live: true, adapter: 'musinsa' },
   { key: 'W컨셉', label: 'W컨셉', order: 3, enabled: true, live: true, adapter: 'wconcept' },
   { key: '퀸잇', label: '퀸잇', order: 4, enabled: true, live: true, adapter: 'queenit' },
-  // 참고용: 랭킹이 앱 전용이라 실시간 수집 불가 → 시드 + 메타 갱신
-  { key: '지그재그', label: '지그재그', order: 5, enabled: true, live: false, adapter: 'zigzag' },
+  // 지그재그: 랭킹 앱 전용이라 실시간 수집 불가 → 제거(2026-08-16)
+  { key: '지그재그', label: '지그재그', order: 8, enabled: false, live: false, adapter: 'zigzag' },
   // 미도입(차단/미구현)
   { key: '에이블리', label: '에이블리', order: 6, enabled: false, live: false, adapter: 'ably' },
   { key: '브랜디', label: '브랜디', order: 7, enabled: false, live: false, adapter: 'brandi' },
