@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import TopItemCard from './components/TopItemCard';
 import ItemDetailModal from './components/ItemDetailModal';
 import NaverTrendPanel from './components/NaverTrendPanel';
+import ArchivePanel from './components/ArchivePanel';
 import { seoulDateKey, seoulOneMonthAgoDateKey, seoulOneMonthLaterDateKey } from './utils/seoulDateKey.js';
 import { orderedCategories, matchesItemCategory } from './utils/itemCategory.js';
 import { SEASON, seasonSubtitle, PLATFORMS } from './config.js';
@@ -12,6 +13,10 @@ import './index.css';
 
 const LIVE_TAB = 'live';
 const TRENDS_TAB = 'naver_trends';
+const ARCHIVE_TAB = 'archive';
+
+const normProductUrl = (u) => String(u || '').split('?')[0].split('#')[0];
+const dateCmp = (a, b) => new Date(b.replace(/\./g, '-')) - new Date(a.replace(/\./g, '-'));
 const PLATFORM_FILTERS = [
   { key: 'all', label: '전체' },
   ...PLATFORMS.filter((p) => p.enabled)
@@ -64,11 +69,62 @@ function App() {
 
   const isLiveTab = activeTab === LIVE_TAB;
   const isTrendsTab = activeTab === TRENDS_TAB;
+  const isArchiveTab = activeTab === ARCHIVE_TAB;
+  const [archiveSort, setArchiveSort] = useState('recent');
 
   useEffect(() => {
-    const allowed = new Set([LIVE_TAB, TRENDS_TAB, todayKey, monthAgoKey]);
+    const allowed = new Set([LIVE_TAB, TRENDS_TAB, ARCHIVE_TAB, todayKey, monthAgoKey]);
     if (!allowed.has(activeTab)) setActiveTab(todayKey);
   }, [activeTab, todayKey, monthAgoKey]);
+
+  /** 일별 스냅샷을 상품 단위로 누적 집계 (첫/최근 관측·관측일수·최고순위) */
+  const cumulativeProducts = useMemo(() => {
+    const map = new Map();
+    const dates = Object.keys(historicalData)
+      .filter((k) => k !== TRENDS_TAB && Array.isArray(historicalData[k]))
+      .sort((a, b) => -dateCmp(a, b)); // 과거→최근 (최근이 대표행이 되도록)
+    for (const date of dates) {
+      for (const row of historicalData[date]) {
+        const url = normProductUrl(row.product_url);
+        if (!url) continue;
+        const key = `${row.platform}|${url}`;
+        const rank = Number(row.source_rank ?? row.platform_rank) || 999;
+        const prev = map.get(key);
+        if (!prev) {
+          map.set(key, { row, firstSeen: date, lastSeen: date, seen: new Set([date]), bestRank: rank });
+        } else {
+          prev.row = row;
+          prev.lastSeen = date;
+          prev.seen.add(date);
+          prev.bestRank = Math.min(prev.bestRank, rank);
+        }
+      }
+    }
+    return Array.from(map.values()).map((c) => ({
+      row: c.row, firstSeen: c.firstSeen, lastSeen: c.lastSeen, daysSeen: c.seen.size, bestRank: c.bestRank,
+    }));
+  }, []);
+
+  const archivePeriod = useMemo(() => {
+    const ds = cumulativeProducts.flatMap((c) => [c.firstSeen, c.lastSeen]).sort((a, b) => dateCmp(b, a));
+    return { start: ds[0] || '', end: ds[ds.length - 1] || '' };
+  }, [cumulativeProducts]);
+
+  const todayUrlSet = useMemo(
+    () => new Set(todayWomensRankings.map((r) => `${r.platform}|${normProductUrl(r.product_url)}`)),
+    [],
+  );
+
+  const archiveItems = useMemo(() => {
+    let list = cumulativeProducts;
+    if (livePlatform !== 'all') list = list.filter((c) => c.row.platform === livePlatform);
+    if (itemCategory !== 'all') list = list.filter((c) => matchesItemCategory(c.row, itemCategory));
+    return [...list].sort((a, b) => {
+      if (archiveSort === 'persistent') return b.daysSeen - a.daysSeen || dateCmp(a.lastSeen, b.lastSeen);
+      if (archiveSort === 'first') return dateCmp(b.firstSeen, a.firstSeen);
+      return dateCmp(a.lastSeen, b.lastSeen) || b.daysSeen - a.daysSeen; // recent
+    });
+  }, [cumulativeProducts, livePlatform, itemCategory, archiveSort]);
 
   const liveItems = useMemo(() => {
     if (!isLiveTab) return [];
@@ -125,14 +181,20 @@ function App() {
 
   // 품목 필터 이전의 기준 목록(플랫폼·탭까지 반영됨) → 여기서 품목별 개수도 계산
   const baseTrends = isLiveTab ? liveItems : predictionItems;
+  // 품목 개수 계산 기준: 아카이브 탭이면 누적 상품(플랫폼 필터 반영), 아니면 baseTrends
+  const categoryCountBase = useMemo(() => {
+    if (!isArchiveTab) return baseTrends;
+    const src = livePlatform === 'all' ? cumulativeProducts : cumulativeProducts.filter((c) => c.row.platform === livePlatform);
+    return src.map((c) => c.row);
+  }, [isArchiveTab, baseTrends, cumulativeProducts, livePlatform]);
   const categoryCounts = useMemo(() => {
-    const counts = { all: baseTrends.length };
+    const counts = { all: categoryCountBase.length };
     for (const { key } of CATEGORY_TABS) {
       if (key === 'all') continue;
-      counts[key] = baseTrends.reduce((n, it) => n + (matchesItemCategory(it, key) ? 1 : 0), 0);
+      counts[key] = categoryCountBase.reduce((n, it) => n + (matchesItemCategory(it, key) ? 1 : 0), 0);
     }
     return counts;
-  }, [baseTrends, CATEGORY_TABS]);
+  }, [categoryCountBase, CATEGORY_TABS]);
 
   const currentTrends =
     itemCategory === 'all' ? baseTrends : baseTrends.filter((it) => matchesItemCategory(it, itemCategory));
@@ -260,9 +322,27 @@ function App() {
         >
           네이버 트렌드
         </button>
+        <button
+          type="button"
+          onClick={() => setActiveTab(ARCHIVE_TAB)}
+          style={{
+            padding: '8px 16px',
+            borderRadius: '20px',
+            border: 'none',
+            fontWeight: 'bold',
+            fontSize: '14px',
+            cursor: 'pointer',
+            whiteSpace: 'nowrap',
+            backgroundColor: isArchiveTab ? '#111' : '#E0E0E0',
+            color: isArchiveTab ? '#FFF' : '#666',
+            transition: 'all 0.2s',
+          }}
+        >
+          누적 상품
+        </button>
       </div>
 
-      {isLiveTab && (
+      {(isLiveTab || isArchiveTab) && (
         <div
           style={{
             display: 'flex',
@@ -296,7 +376,20 @@ function App() {
 
       {isTrendsTab && <NaverTrendPanel data={historicalData.naver_trends} />}
 
-      {!isTrendsTab && (
+      {isArchiveTab && (
+        <ArchivePanel
+          items={archiveItems}
+          totalCount={cumulativeProducts.length}
+          sort={archiveSort}
+          onSort={setArchiveSort}
+          todayUrls={todayUrlSet}
+          onOpen={openModal}
+          periodStart={archivePeriod.start}
+          periodEnd={archivePeriod.end}
+        />
+      )}
+
+      {!isTrendsTab && !isArchiveTab && (
       <main className="trend-list">
         {currentTrends.length > 0 ? (
           currentTrends.map((item, index) => (
