@@ -19,6 +19,7 @@ import { PLATFORMS, ITEMS_PER_PLATFORM } from '../src/config.js';
 import { MAX_HISTORY_SNAPSHOTS } from './crawlConfig.mjs';
 import { getAdapter } from './platforms/index.mjs';
 import { fetchNewArrivalRows } from './fetch-new-arrivals.mjs';
+import { fetchNaverTrends } from './fetch-naver-trends.mjs';
 import {
   buildPredictionSnapshotFromRanking,
   mergeRankingPoolWithNewArrivals,
@@ -108,10 +109,28 @@ async function main() {
     todayKey: dayKey,
   });
 
+  // ── 네이버 데이터랩 여성의류 인기 검색어(예약키 naver_trends, historical에 함께 저장) ──
+  const RESERVED_KEYS = new Set(['naver_trends']);
+  try {
+    const prev = historical.naver_trends?.keywords;
+    const prevRank = new Map(Array.isArray(prev) ? prev.map((k) => [k.keyword, k.rank]) : []);
+    const trends = await fetchNaverTrends();
+    trends.keywords = trends.keywords.map((k) => {
+      const pr = prevRank.get(k.keyword);
+      return { ...k, prevRank: pr ?? null, delta: pr != null ? pr - k.rank : null };
+    });
+    historical.naver_trends = trends;
+    console.log('네이버 트렌드:', trends.keywords.length, '개 —', trends.keywords.slice(0, 6).map((k) => k.keyword).join(', '));
+  } catch (e) {
+    console.warn('네이버 트렌드 수집 실패(무시):', e.message);
+  }
+
   const sortedKeys = Object.keys(historical)
+    .filter((k) => !RESERVED_KEYS.has(k))
     .sort((a, b) => new Date(b.replace(/\./g, '-')) - new Date(a.replace(/\./g, '-')))
     .slice(0, MAX_HISTORY_SNAPSHOTS); // 오래된 스냅샷은 보존 한도까지만 유지
   const ordered = {};
+  if (historical.naver_trends) ordered.naver_trends = historical.naver_trends; // 예약키 보존
   for (const k of sortedKeys) ordered[k] = historical[k];
   writeFileSync(HISTORICAL, JSON.stringify(ordered, null, 2) + '\n', 'utf8');
   console.log('Historical snapshot:', dayKey, '→', HISTORICAL);

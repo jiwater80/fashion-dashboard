@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import TopItemCard from './components/TopItemCard';
 import ItemDetailModal from './components/ItemDetailModal';
+import NaverTrendPanel from './components/NaverTrendPanel';
 import { seoulDateKey, seoulOneMonthAgoDateKey, seoulOneMonthLaterDateKey } from './utils/seoulDateKey.js';
 import { orderedCategories, matchesItemCategory } from './utils/itemCategory.js';
 import { SEASON, seasonSubtitle, PLATFORMS } from './config.js';
@@ -10,6 +11,7 @@ import todayWomensRankings from './today_womens_rankings.json';
 import './index.css';
 
 const LIVE_TAB = 'live';
+const TRENDS_TAB = 'naver_trends';
 const PLATFORM_FILTERS = [
   { key: 'all', label: '전체' },
   ...PLATFORMS.filter((p) => p.enabled)
@@ -61,9 +63,10 @@ function App() {
   const CATEGORY_TABS = useMemo(() => [{ key: 'all', label: '전체' }, ...orderedCategories()], []);
 
   const isLiveTab = activeTab === LIVE_TAB;
+  const isTrendsTab = activeTab === TRENDS_TAB;
 
   useEffect(() => {
-    const allowed = new Set([LIVE_TAB, todayKey, monthAgoKey]);
+    const allowed = new Set([LIVE_TAB, TRENDS_TAB, todayKey, monthAgoKey]);
     if (!allowed.has(activeTab)) setActiveTab(todayKey);
   }, [activeTab, todayKey, monthAgoKey]);
 
@@ -155,7 +158,8 @@ function App() {
         </div>
       </header>
       
-      {/* 품목(아이템) 분류 탭 — 맨 위, 실시간·예측 공통 적용 */}
+      {/* 품목(아이템) 분류 탭 — 맨 위, 실시간·예측 공통 적용 (트렌드 탭에선 숨김) */}
+      {!isTrendsTab && (
       <div style={{ padding: '0 16px 10px' }}>
         <div style={{ fontSize: '11px', fontWeight: 700, color: '#888', margin: '0 0 6px 2px', letterSpacing: '0.02em' }}>
           품목별 보기
@@ -192,6 +196,7 @@ function App() {
           })}
         </div>
       </div>
+      )}
 
       {/* 오늘 실시간 랭킹 + 날짜별 떡상 예측 탭 */}
       <div className="tabs-container" style={{display: 'flex', gap: '8px', padding: '0 16px 16px', overflowX: 'auto', flexWrap: 'wrap'}}>
@@ -237,6 +242,24 @@ function App() {
             {label}
           </button>
         ))}
+        <button
+          type="button"
+          onClick={() => setActiveTab(TRENDS_TAB)}
+          style={{
+            padding: '8px 16px',
+            borderRadius: '20px',
+            border: 'none',
+            fontWeight: 'bold',
+            fontSize: '14px',
+            cursor: 'pointer',
+            whiteSpace: 'nowrap',
+            backgroundColor: isTrendsTab ? '#03C75A' : '#E0E0E0',
+            color: isTrendsTab ? '#FFF' : '#666',
+            transition: 'all 0.2s',
+          }}
+        >
+          네이버 트렌드
+        </button>
       </div>
 
       {isLiveTab && (
@@ -271,6 +294,9 @@ function App() {
         </div>
       )}
 
+      {isTrendsTab && <NaverTrendPanel data={historicalData.naver_trends} />}
+
+      {!isTrendsTab && (
       <main className="trend-list">
         {currentTrends.length > 0 ? (
           currentTrends.map((item, index) => (
@@ -294,6 +320,7 @@ function App() {
           </p>
         )}
       </main>
+      )}
 
       {selectedItem && (
         <ItemDetailModal item={selectedItem} onClose={closeModal} />

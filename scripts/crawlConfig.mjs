@@ -65,6 +65,20 @@ export const WCONCEPT = {
   },
 };
 
+/**
+ * 네이버 데이터랩 쇼핑인사이트 — 여성의류 인기 검색어 Top. 공식 오픈API가 아닌 데이터랩 웹 내부 엔드포인트.
+ * 인증 토큰 불필요(Referer 헤더만). 상품 랭킹이 아니라 "검색 트렌드"(뜨는 검색어).
+ */
+export const NAVER_TRENDS = {
+  url: 'https://datalab.naver.com/shoppingInsight/getCategoryKeywordRank.naver',
+  referer: 'https://datalab.naver.com/shoppingInsight/sCategory.naver',
+  origin: 'https://datalab.naver.com',
+  cid: 50000167, // 패션의류 > 여성의류
+  category: '여성의류',
+  count: 100,
+  lookbackDays: 7, // 최근 N일 기준 인기 검색어
+};
+
 /** 플랫폼별 PDP 갱신 간 지연(ms) — 과도한 요청 방지 */
 export const PDP_DELAY_MS = 400;
 
