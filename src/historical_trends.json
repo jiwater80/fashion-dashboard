@@ -1,10 +1,10 @@
 {
   "naver_trends": {
-    "updated": "2026.10.17",
+    "updated": "2026.10.18",
     "category": "여성의류",
     "period": {
-      "start": "2026-10-10",
-      "end": "2026-10-16"
+      "start": "2026-10-11",
+      "end": "2026-10-17"
     },
     "keywords": [
       {
@@ -45,21 +45,21 @@
       },
       {
         "rank": 7,
-        "keyword": "써스데이아일랜드",
-        "prevRank": 7,
-        "delta": 0
+        "keyword": "올리비아로렌",
+        "prevRank": 8,
+        "delta": 1
       },
       {
         "rank": 8,
-        "keyword": "올리비아로렌",
+        "keyword": "후드집업",
         "prevRank": 9,
         "delta": 1
       },
       {
         "rank": 9,
-        "keyword": "후드집업",
-        "prevRank": 8,
-        "delta": -1
+        "keyword": "써스데이아일랜드",
+        "prevRank": 7,
+        "delta": -2
       },
       {
         "rank": 10,
@@ -76,539 +76,2817 @@
       {
         "rank": 12,
         "keyword": "가죽자켓",
-        "prevRank": 15,
-        "delta": 3
+        "prevRank": 12,
+        "delta": 0
       },
       {
         "rank": 13,
-        "keyword": "제시뉴욕",
-        "prevRank": 18,
-        "delta": 5
+        "keyword": "쉬즈미스",
+        "prevRank": 15,
+        "delta": 2
       },
       {
         "rank": 14,
         "keyword": "에고이스트",
-        "prevRank": 16,
-        "delta": 2
+        "prevRank": 14,
+        "delta": 0
       },
       {
         "rank": 15,
-        "keyword": "쉬즈미스",
-        "prevRank": 12,
-        "delta": -3
+        "keyword": "제시뉴욕",
+        "prevRank": 13,
+        "delta": -2
       },
       {
         "rank": 16,
         "keyword": "케네스레이디",
-        "prevRank": 13,
-        "delta": -3
+        "prevRank": 16,
+        "delta": 0
       },
       {
         "rank": 17,
-        "keyword": "올리브데올리브",
-        "prevRank": 14,
-        "delta": -3
+        "keyword": "니트조끼",
+        "prevRank": 19,
+        "delta": 2
       },
       {
         "rank": 18,
         "keyword": "여성자켓",
-        "prevRank": 20,
-        "delta": 2
+        "prevRank": 18,
+        "delta": 0
       },
       {
         "rank": 19,
-        "keyword": "니트조끼",
-        "prevRank": 19,
-        "delta": 0
+        "keyword": "올리브데올리브",
+        "prevRank": 17,
+        "delta": -2
       },
       {
         "rank": 20,
         "keyword": "잇미샤",
-        "prevRank": 17,
-        "delta": -3
+        "prevRank": 20,
+        "delta": 0
       },
       {
         "rank": 21,
-        "keyword": "가디건",
+        "keyword": "여성스웨이드자켓",
         "prevRank": 23,
         "delta": 2
       },
       {
         "rank": 22,
-        "keyword": "딥브이넥니트",
-        "prevRank": 24,
-        "delta": 2
+        "keyword": "가디건",
+        "prevRank": 21,
+        "delta": -1
       },
       {
         "rank": 23,
-        "keyword": "여성스웨이드자켓",
-        "prevRank": 22,
-        "delta": -1
+        "keyword": "케네스레이디원피스",
+        "prevRank": 25,
+        "delta": 2
       },
       {
         "rank": 24,
-        "keyword": "베네통",
-        "prevRank": 28,
-        "delta": 4
+        "keyword": "버버리퀼팅자켓",
+        "prevRank": 29,
+        "delta": 5
       },
       {
         "rank": 25,
-        "keyword": "케네스레이디원피스",
-        "prevRank": 21,
-        "delta": -4
+        "keyword": "딥브이넥니트",
+        "prevRank": 22,
+        "delta": -3
       },
       {
         "rank": 26,
-        "keyword": "브이넥니트",
-        "prevRank": 27,
-        "delta": 1
+        "keyword": "경량패딩",
+        "prevRank": 35,
+        "delta": 9
       },
       {
         "rank": 27,
-        "keyword": "티셔츠",
-        "prevRank": 26,
-        "delta": -1
+        "keyword": "럭키슈에뜨",
+        "prevRank": 33,
+        "delta": 6
       },
       {
         "rank": 28,
         "keyword": "지고트원피스",
-        "prevRank": 25,
-        "delta": -3
-      },
-      {
-        "rank": 29,
-        "keyword": "버버리퀼팅자켓",
-        "prevRank": 30,
-        "delta": 1
-      },
-      {
-        "rank": 30,
-        "keyword": "여성맨투맨",
-        "prevRank": 31,
-        "delta": 1
-      },
-      {
-        "rank": 31,
-        "keyword": "워크자켓",
-        "prevRank": 29,
-        "delta": -2
-      },
-      {
-        "rank": 32,
-        "keyword": "여성가죽자켓",
-        "prevRank": 35,
-        "delta": 3
-      },
-      {
-        "rank": 33,
-        "keyword": "럭키슈에뜨",
-        "prevRank": 36,
-        "delta": 3
-      },
-      {
-        "rank": 34,
-        "keyword": "니트",
-        "prevRank": 34,
+        "prevRank": 28,
         "delta": 0
       },
       {
+        "rank": 29,
+        "keyword": "티셔츠",
+        "prevRank": 27,
+        "delta": -2
+      },
+      {
+        "rank": 30,
+        "keyword": "베네통",
+        "prevRank": 24,
+        "delta": -6
+      },
+      {
+        "rank": 31,
+        "keyword": "브이넥니트",
+        "prevRank": 26,
+        "delta": -5
+      },
+      {
+        "rank": 32,
+        "keyword": "니트",
+        "prevRank": 34,
+        "delta": 2
+      },
+      {
+        "rank": 33,
+        "keyword": "여성맨투맨",
+        "prevRank": 30,
+        "delta": -3
+      },
+      {
+        "rank": 34,
+        "keyword": "에르노패딩",
+        "prevRank": 36,
+        "delta": 2
+      },
+      {
         "rank": 35,
-        "keyword": "경량패딩",
+        "keyword": "막스마라패딩",
         "prevRank": 43,
         "delta": 8
       },
       {
         "rank": 36,
-        "keyword": "에르노패딩",
-        "prevRank": 39,
-        "delta": 3
+        "keyword": "여성가죽자켓",
+        "prevRank": 32,
+        "delta": -4
       },
       {
         "rank": 37,
-        "keyword": "듀엘",
-        "prevRank": 32,
-        "delta": -5
+        "keyword": "맨투맨",
+        "prevRank": 38,
+        "delta": 1
       },
       {
         "rank": 38,
-        "keyword": "맨투맨",
-        "prevRank": 42,
-        "delta": 4
+        "keyword": "워크자켓",
+        "prevRank": 31,
+        "delta": -7
       },
       {
         "rank": 39,
         "keyword": "타이블라우스",
-        "prevRank": 41,
-        "delta": 2
+        "prevRank": 39,
+        "delta": 0
       },
       {
         "rank": 40,
-        "keyword": "스커트",
-        "prevRank": 38,
-        "delta": -2
+        "keyword": "몽클레어패딩",
+        "prevRank": 46,
+        "delta": 6
       },
       {
         "rank": 41,
-        "keyword": "모조에스핀",
-        "prevRank": 33,
-        "delta": -8
+        "keyword": "니트원피스",
+        "prevRank": 42,
+        "delta": 1
       },
       {
         "rank": 42,
-        "keyword": "니트원피스",
-        "prevRank": 45,
-        "delta": 3
+        "keyword": "후리스",
+        "prevRank": 49,
+        "delta": 7
       },
       {
         "rank": 43,
-        "keyword": "막스마라패딩",
+        "keyword": "듀엘",
         "prevRank": 37,
         "delta": -6
       },
       {
         "rank": 44,
-        "keyword": "자라",
+        "keyword": "스커트",
         "prevRank": 40,
         "delta": -4
       },
       {
         "rank": 45,
         "keyword": "베네통가디건",
-        "prevRank": 49,
-        "delta": 4
-      },
-      {
-        "rank": 46,
-        "keyword": "몽클레어패딩",
-        "prevRank": 50,
-        "delta": 4
-      },
-      {
-        "rank": 47,
-        "keyword": "잇미샤원피스",
-        "prevRank": 47,
+        "prevRank": 45,
         "delta": 0
       },
       {
-        "rank": 48,
-        "keyword": "리스트자켓",
+        "rank": 46,
+        "keyword": "에잇세컨즈",
+        "prevRank": 53,
+        "delta": 7
+      },
+      {
+        "rank": 47,
+        "keyword": "자라",
         "prevRank": 44,
-        "delta": -4
+        "delta": -3
+      },
+      {
+        "rank": 48,
+        "keyword": "잇미샤원피스",
+        "prevRank": 47,
+        "delta": -1
       },
       {
         "rank": 49,
-        "keyword": "후리스",
-        "prevRank": 52,
-        "delta": 3
+        "keyword": "롱스커트",
+        "prevRank": 50,
+        "delta": 1
       },
       {
         "rank": 50,
-        "keyword": "롱스커트",
-        "prevRank": 46,
-        "delta": -4
+        "keyword": "모조에스핀",
+        "prevRank": 41,
+        "delta": -9
       },
       {
         "rank": 51,
-        "keyword": "여성가을자켓",
+        "keyword": "리스트자켓",
         "prevRank": 48,
         "delta": -3
       },
       {
         "rank": 52,
-        "keyword": "모조에스핀원피스",
-        "prevRank": 56,
-        "delta": 4
+        "keyword": "여성가을자켓",
+        "prevRank": 51,
+        "delta": -1
       },
       {
         "rank": 53,
-        "keyword": "에잇세컨즈",
-        "prevRank": 58,
-        "delta": 5
+        "keyword": "후드티",
+        "prevRank": 54,
+        "delta": 1
       },
       {
         "rank": 54,
-        "keyword": "후드티",
-        "prevRank": 55,
-        "delta": 1
+        "keyword": "청바지",
+        "prevRank": 56,
+        "delta": 2
       },
       {
         "rank": 55,
-        "keyword": "가을원피스",
-        "prevRank": 53,
-        "delta": -2
-      },
-      {
-        "rank": 56,
-        "keyword": "청바지",
-        "prevRank": 59,
-        "delta": 3
-      },
-      {
-        "rank": 57,
-        "keyword": "여성니트조끼",
-        "prevRank": 62,
-        "delta": 5
-      },
-      {
-        "rank": 58,
-        "keyword": "보브",
-        "prevRank": 51,
-        "delta": -7
-      },
-      {
-        "rank": 59,
         "keyword": "여성니트",
-        "prevRank": 61,
-        "delta": 2
-      },
-      {
-        "rank": 60,
-        "keyword": "탑텐",
-        "prevRank": 57,
-        "delta": -3
-      },
-      {
-        "rank": 61,
-        "keyword": "결혼식하객룩",
-        "prevRank": 60,
-        "delta": -1
-      },
-      {
-        "rank": 62,
-        "keyword": "막스마라코트",
-        "prevRank": 63,
-        "delta": 1
-      },
-      {
-        "rank": 63,
-        "keyword": "여자가죽자켓",
-        "prevRank": 54,
-        "delta": -9
-      },
-      {
-        "rank": 64,
-        "keyword": "jj지고트원피스",
-        "prevRank": 82,
-        "delta": 18
-      },
-      {
-        "rank": 65,
-        "keyword": "트레이닝세트",
-        "prevRank": 64,
-        "delta": -1
-      },
-      {
-        "rank": 66,
-        "keyword": "여성가을원피스",
-        "prevRank": 73,
-        "delta": 7
-      },
-      {
-        "rank": 67,
-        "keyword": "여성양가죽자켓",
-        "prevRank": 74,
-        "delta": 7
-      },
-      {
-        "rank": 68,
-        "keyword": "레더자켓",
-        "prevRank": 76,
-        "delta": 8
-      },
-      {
-        "rank": 69,
-        "keyword": "올리비아로렌자켓",
-        "prevRank": 71,
-        "delta": 2
-      },
-      {
-        "rank": 70,
-        "keyword": "크로커다일레이디",
-        "prevRank": 70,
-        "delta": 0
-      },
-      {
-        "rank": 71,
-        "keyword": "발렌시아",
-        "prevRank": 72,
-        "delta": 1
-      },
-      {
-        "rank": 72,
-        "keyword": "라코스테가디건",
-        "prevRank": 67,
-        "delta": -5
-      },
-      {
-        "rank": 73,
-        "keyword": "여성가을점퍼",
-        "prevRank": 69,
-        "delta": -4
-      },
-      {
-        "rank": 74,
-        "keyword": "jj지고트",
-        "prevRank": 68,
-        "delta": -6
-      },
-      {
-        "rank": 75,
-        "keyword": "뷔스티에",
-        "prevRank": 78,
-        "delta": 3
-      },
-      {
-        "rank": 76,
-        "keyword": "쉬즈미스자켓",
-        "prevRank": 65,
-        "delta": -11
-      },
-      {
-        "rank": 77,
-        "keyword": "스튜디오톰보이",
-        "prevRank": 66,
-        "delta": -11
-      },
-      {
-        "rank": 78,
-        "keyword": "숏트렌치코트",
-        "prevRank": 83,
-        "delta": 5
-      },
-      {
-        "rank": 79,
-        "keyword": "온앤온",
-        "prevRank": 75,
-        "delta": -4
-      },
-      {
-        "rank": 80,
-        "keyword": "바지",
-        "prevRank": 84,
+        "prevRank": 59,
         "delta": 4
       },
       {
-        "rank": 81,
-        "keyword": "플리츠스커트",
-        "prevRank": 88,
+        "rank": 56,
+        "keyword": "모조에스핀원피스",
+        "prevRank": 52,
+        "delta": -4
+      },
+      {
+        "rank": 57,
+        "keyword": "보브",
+        "prevRank": 58,
+        "delta": 1
+      },
+      {
+        "rank": 58,
+        "keyword": "막스마라코트",
+        "prevRank": 62,
+        "delta": 4
+      },
+      {
+        "rank": 59,
+        "keyword": "여성니트조끼",
+        "prevRank": 57,
+        "delta": -2
+      },
+      {
+        "rank": 60,
+        "keyword": "가을원피스",
+        "prevRank": 55,
+        "delta": -5
+      },
+      {
+        "rank": 61,
+        "keyword": "여자가죽자켓",
+        "prevRank": 63,
+        "delta": 2
+      },
+      {
+        "rank": 62,
+        "keyword": "결혼식하객룩",
+        "prevRank": 61,
+        "delta": -1
+      },
+      {
+        "rank": 63,
+        "keyword": "발렌시아",
+        "prevRank": 71,
+        "delta": 8
+      },
+      {
+        "rank": 64,
+        "keyword": "트레이닝세트",
+        "prevRank": 65,
+        "delta": 1
+      },
+      {
+        "rank": 65,
+        "keyword": "탑텐",
+        "prevRank": 60,
+        "delta": -5
+      },
+      {
+        "rank": 66,
+        "keyword": "여성양가죽자켓",
+        "prevRank": 67,
+        "delta": 1
+      },
+      {
+        "rank": 67,
+        "keyword": "여성가을점퍼",
+        "prevRank": 73,
+        "delta": 6
+      },
+      {
+        "rank": 68,
+        "keyword": "올리비아로렌자켓",
+        "prevRank": 69,
+        "delta": 1
+      },
+      {
+        "rank": 69,
+        "keyword": "쉬즈미스자켓",
+        "prevRank": 76,
         "delta": 7
+      },
+      {
+        "rank": 70,
+        "keyword": "레더자켓",
+        "prevRank": 68,
+        "delta": -2
+      },
+      {
+        "rank": 71,
+        "keyword": "jj지고트원피스",
+        "prevRank": 64,
+        "delta": -7
+      },
+      {
+        "rank": 72,
+        "keyword": "플리츠스커트",
+        "prevRank": 81,
+        "delta": 9
+      },
+      {
+        "rank": 73,
+        "keyword": "라코스테가디건",
+        "prevRank": 72,
+        "delta": -1
+      },
+      {
+        "rank": 74,
+        "keyword": "여성가을원피스",
+        "prevRank": 66,
+        "delta": -8
+      },
+      {
+        "rank": 75,
+        "keyword": "크로커다일레이디",
+        "prevRank": 70,
+        "delta": -5
+      },
+      {
+        "rank": 76,
+        "keyword": "jj지고트",
+        "prevRank": 74,
+        "delta": -2
+      },
+      {
+        "rank": 77,
+        "keyword": "캐시미어니트",
+        "prevRank": 87,
+        "delta": 10
+      },
+      {
+        "rank": 78,
+        "keyword": "케이프코트",
+        "prevRank": 94,
+        "delta": 16
+      },
+      {
+        "rank": 79,
+        "keyword": "여성경량패딩",
+        "prevRank": 97,
+        "delta": 18
+      },
+      {
+        "rank": 80,
+        "keyword": "스튜디오톰보이",
+        "prevRank": 77,
+        "delta": -3
+      },
+      {
+        "rank": 81,
+        "keyword": "숏트렌치코트",
+        "prevRank": 78,
+        "delta": -3
       },
       {
         "rank": 82,
         "keyword": "유니클로",
-        "prevRank": 81,
-        "delta": -1
+        "prevRank": 82,
+        "delta": 0
       },
       {
         "rank": 83,
-        "keyword": "스웨이드스커트",
-        "prevRank": 80,
-        "delta": -3
+        "keyword": "샤틴원피스",
+        "prevRank": 91,
+        "delta": 8
       },
       {
         "rank": 84,
-        "keyword": "재킷",
-        "prevRank": 77,
-        "delta": -7
-      },
-      {
-        "rank": 85,
-        "keyword": "폴로랄프로렌",
+        "keyword": "온앤온",
         "prevRank": 79,
-        "delta": -6
-      },
-      {
-        "rank": 86,
-        "keyword": "bcbg",
-        "prevRank": null,
-        "delta": null
-      },
-      {
-        "rank": 87,
-        "keyword": "캐시미어니트",
-        "prevRank": 91,
-        "delta": 4
-      },
-      {
-        "rank": 88,
-        "keyword": "스파오경량패딩",
-        "prevRank": 87,
-        "delta": -1
-      },
-      {
-        "rank": 89,
-        "keyword": "여성점퍼",
-        "prevRank": 85,
-        "delta": -4
-      },
-      {
-        "rank": 90,
-        "keyword": "김장조끼",
-        "prevRank": 93,
-        "delta": 3
-      },
-      {
-        "rank": 91,
-        "keyword": "샤틴원피스",
-        "prevRank": 86,
         "delta": -5
       },
       {
-        "rank": 92,
-        "keyword": "바람막이",
-        "prevRank": 89,
-        "delta": -3
+        "rank": 85,
+        "keyword": "김장조끼",
+        "prevRank": 90,
+        "delta": 5
       },
       {
-        "rank": 93,
-        "keyword": "듀엘원피스",
-        "prevRank": 94,
-        "delta": 1
+        "rank": 86,
+        "keyword": "바지",
+        "prevRank": 80,
+        "delta": -6
       },
       {
-        "rank": 94,
-        "keyword": "케이프코트",
+        "rank": 87,
+        "keyword": "뷔스티에",
+        "prevRank": 75,
+        "delta": -12
+      },
+      {
+        "rank": 88,
+        "keyword": "여성트레이닝세트",
+        "prevRank": 95,
+        "delta": 7
+      },
+      {
+        "rank": 89,
+        "keyword": "베네통니트",
+        "prevRank": 96,
+        "delta": 7
+      },
+      {
+        "rank": 90,
+        "keyword": "여성티셔츠",
         "prevRank": null,
         "delta": null
       },
       {
+        "rank": 91,
+        "keyword": "바람막이",
+        "prevRank": 92,
+        "delta": 1
+      },
+      {
+        "rank": 92,
+        "keyword": "스웨이드스커트",
+        "prevRank": 83,
+        "delta": -9
+      },
+      {
+        "rank": 93,
+        "keyword": "여성점퍼",
+        "prevRank": 89,
+        "delta": -4
+      },
+      {
+        "rank": 94,
+        "keyword": "재킷",
+        "prevRank": 84,
+        "delta": -10
+      },
+      {
         "rank": 95,
-        "keyword": "여성트레이닝세트",
+        "keyword": "버버리패딩",
         "prevRank": null,
         "delta": null
       },
       {
         "rank": 96,
-        "keyword": "베네통니트",
-        "prevRank": 90,
-        "delta": -6
+        "keyword": "폴로랄프로렌",
+        "prevRank": 85,
+        "delta": -11
       },
       {
         "rank": 97,
-        "keyword": "여성경량패딩",
+        "keyword": "버버리트렌치코트",
         "prevRank": null,
         "delta": null
       },
       {
         "rank": 98,
-        "keyword": "레이어드가디건",
-        "prevRank": 92,
-        "delta": -6
+        "keyword": "스파오경량패딩",
+        "prevRank": 88,
+        "delta": -10
       },
       {
         "rank": 99,
-        "keyword": "아가일니트",
-        "prevRank": 98,
-        "delta": -1
+        "keyword": "bcbg",
+        "prevRank": 86,
+        "delta": -13
       },
       {
         "rank": 100,
-        "keyword": "하프트렌치코트",
-        "prevRank": 95,
-        "delta": -5
+        "keyword": "양가죽자켓",
+        "prevRank": null,
+        "delta": null
       }
     ]
   },
+  "2026.10.18": [
+    {
+      "id": "rank_today_ms_1",
+      "platform_rank": 1,
+      "name": "Isla Smocked Sleeveless Top (White)",
+      "brand": "플리즈노팔로우",
+      "platform": "무신사",
+      "price": 45140,
+      "img_url": "https://image.msscdn.net/images/goods_img/20260417/6331525/6331525_17768557403514_500.jpg",
+      "product_url": "https://www.musinsa.com/products/6331525",
+      "review_count": 1,
+      "base_wish": 2400,
+      "brand_pop": 93,
+      "view_count": 56800,
+      "cart_count": 4380,
+      "is_preorder": false,
+      "seasonality_match": 93,
+      "competitor_avg_price": 51911,
+      "tags": [
+        "#여성의류",
+        "#무신사",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "무신사 여성 랭킹(실시간) 1위",
+        "api.musinsa.com 스냅샷"
+      ],
+      "ai_summary": [
+        "공개 랭킹 API 기준 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.8,
+      "success_prob": 95,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "musinsa_ranking_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 1,
+      "prediction_momentum_score": 78.5,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장)",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_ms_3",
+      "platform_rank": 2,
+      "name": "Seah Lace Sleeveless Top (Skin Beige)",
+      "brand": "플리즈노팔로우",
+      "platform": "무신사",
+      "price": 52020,
+      "img_url": "https://image.msscdn.net/images/goods_img/20260825/7160581/7160581_17878123528709_500.jpg",
+      "product_url": "https://www.musinsa.com/products/7160581",
+      "review_count": 0,
+      "base_wish": 9300,
+      "brand_pop": 87,
+      "view_count": 46400,
+      "cart_count": 3540,
+      "is_preorder": false,
+      "seasonality_match": 91,
+      "competitor_avg_price": 59823,
+      "tags": [
+        "#여성의류",
+        "#무신사",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "무신사 여성 랭킹(실시간) 3위",
+        "api.musinsa.com 스냅샷"
+      ],
+      "ai_summary": [
+        "공개 랭킹 API 기준 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.6,
+      "success_prob": 93,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "musinsa_ranking_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 3,
+      "prediction_momentum_score": 77.9,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장)",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_29cm_4",
+      "platform_rank": 3,
+      "name": "[3차]Leme Boat Neck Knit (Ivory)",
+      "brand": "엘로주",
+      "platform": "29CM",
+      "price": 91040,
+      "discount_rate": 23,
+      "img_url": "https://img.29cm.co.kr/item/202610/11f1c65e75742fe68aaed38a8d9f0ae1.jpg",
+      "product_url": "https://product.29cm.co.kr/catalog/4272581",
+      "base_wish": 8400,
+      "brand_pop": 84,
+      "view_count": 41200,
+      "cart_count": 3120,
+      "is_preorder": false,
+      "seasonality_match": 90,
+      "competitor_avg_price": 104696,
+      "tags": [
+        "#여성의류",
+        "#29CM",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "29CM 여성의류 베스트(실시간) 4위",
+        "display-bff-api 스냅샷"
+      ],
+      "ai_summary": [
+        "29CM 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.4,
+      "success_prob": 92,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "29cm_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 4,
+      "prediction_momentum_score": 74.3,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장)",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_29cm_7",
+      "platform_rank": 4,
+      "name": "[컬러추가] 오얼 케이블 니트 긴팔 가디건",
+      "brand": "트위",
+      "platform": "29CM",
+      "price": 27930,
+      "discount_rate": 44,
+      "img_url": "https://img.29cm.co.kr/item/202608/11f197a91c112a568fdc3d8edf520e8e.jpg",
+      "product_url": "https://product.29cm.co.kr/catalog/3748154",
+      "base_wish": 5700,
+      "brand_pop": 75,
+      "view_count": 25600,
+      "cart_count": 1860,
+      "is_preorder": false,
+      "seasonality_match": 87,
+      "competitor_avg_price": 32119,
+      "tags": [
+        "#여성의류",
+        "#29CM",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "29CM 여성의류 베스트(실시간) 7위",
+        "display-bff-api 스냅샷"
+      ],
+      "ai_summary": [
+        "29CM 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.1,
+      "success_prob": 89,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "29cm_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 7,
+      "prediction_momentum_score": 73.1,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)",
+        "초가을 시즌 키워드"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장) · 초가을 시즌 키워드",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_ms_6",
+      "platform_rank": 5,
+      "name": "MORIN LACE SLEEVELESS (CREAM)",
+      "brand": "폴뉴아",
+      "platform": "무신사",
+      "price": 42360,
+      "img_url": "https://image.msscdn.net/images/prd_img/20260813/7068050/detail_7068050_17872079231663_500.jpg",
+      "product_url": "https://www.musinsa.com/products/7068050",
+      "review_count": 3,
+      "base_wish": 3200,
+      "brand_pop": 78,
+      "view_count": 30800,
+      "cart_count": 2280,
+      "is_preorder": false,
+      "seasonality_match": 88,
+      "competitor_avg_price": 48714,
+      "tags": [
+        "#여성의류",
+        "#무신사",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "무신사 여성 랭킹(실시간) 6위",
+        "api.musinsa.com 스냅샷"
+      ],
+      "ai_summary": [
+        "공개 랭킹 API 기준 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.2,
+      "success_prob": 90,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "musinsa_ranking_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 6,
+      "prediction_momentum_score": 71.2,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장)",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_29cm_5",
+      "platform_rank": 6,
+      "name": "[3차 재입고] bias herring knit (oatmeal)",
+      "brand": "아우브아워",
+      "platform": "29CM",
+      "price": 108820,
+      "discount_rate": 21,
+      "img_url": "https://img.29cm.co.kr/item/202609/11f1a9f3f4ae816c9468efb28fdf76f3.jpg",
+      "product_url": "https://product.29cm.co.kr/catalog/3662433",
+      "base_wish": 7500,
+      "brand_pop": 81,
+      "view_count": 36000,
+      "cart_count": 2700,
+      "is_preorder": false,
+      "seasonality_match": 89,
+      "competitor_avg_price": 125143,
+      "tags": [
+        "#여성의류",
+        "#29CM",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "29CM 여성의류 베스트(실시간) 5위",
+        "display-bff-api 스냅샷"
+      ],
+      "ai_summary": [
+        "29CM 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.3,
+      "success_prob": 91,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "29cm_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 5,
+      "prediction_momentum_score": 70.7,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장)",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_wconcept_3",
+      "platform_rank": 7,
+      "name": "[리오더][5PACK]매일 새로운 모달 5매입팬티(KPTE182S)",
+      "brand": "비너스",
+      "platform": "W컨셉",
+      "price": 19600,
+      "discount_rate": 44,
+      "img_url": "https://product-image.wconcept.co.kr/productimg/image/img1/73/308327573_UT80262.jpg",
+      "product_url": "https://m.wconcept.co.kr/Product/308327573",
+      "base_wish": 3413,
+      "review_count": 357,
+      "review_rating": 4.9,
+      "brand_pop": 87,
+      "view_count": 46400,
+      "cart_count": 3540,
+      "is_preorder": false,
+      "seasonality_match": 91,
+      "competitor_avg_price": 22540,
+      "tags": [
+        "#여성의류",
+        "#W컨셉",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "W컨셉 여성 일간 베스트(실시간) 3위",
+        "찜 3,413 · display-bff 스냅샷"
+      ],
+      "ai_summary": [
+        "W컨셉 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·리뷰는 실측, 조회·장바구니는 추정 보조지표입니다."
+      ],
+      "cart_ratio": 7.6,
+      "success_prob": 93,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "wconcept_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 3,
+      "prediction_momentum_score": 69.6,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장)",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_ms_4",
+      "platform_rank": 8,
+      "name": "Soft Lace Sleeveless Gray",
+      "brand": "러프넥",
+      "platform": "무신사",
+      "price": 56000,
+      "img_url": "https://image.msscdn.net/images/goods_img/20260831/7207617/7207617_17887660605362_500.jpg",
+      "product_url": "https://www.musinsa.com/products/7207617",
+      "review_count": 1,
+      "base_wish": 2400,
+      "brand_pop": 84,
+      "view_count": 41200,
+      "cart_count": 3120,
+      "is_preorder": false,
+      "seasonality_match": 90,
+      "competitor_avg_price": 64400,
+      "tags": [
+        "#여성의류",
+        "#무신사",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "무신사 여성 랭킹(실시간) 4위",
+        "api.musinsa.com 스냅샷"
+      ],
+      "ai_summary": [
+        "공개 랭킹 API 기준 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.4,
+      "success_prob": 92,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "musinsa_ranking_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 4,
+      "prediction_momentum_score": 69.2,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장)",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_29cm_8",
+      "platform_rank": 9,
+      "name": "(우먼)파인 캐시미어 100 홀가먼트 브이넥 니트 - 7 COLOR",
+      "brand": "수아레 우먼",
+      "platform": "29CM",
+      "price": 99520,
+      "discount_rate": 34,
+      "img_url": "https://img.29cm.co.kr/item/202609/11f1ace93a400f3384998b103a8b1f75.jpg",
+      "product_url": "https://product.29cm.co.kr/catalog/4207753",
+      "base_wish": 4800,
+      "brand_pop": 72,
+      "view_count": 20400,
+      "cart_count": 1440,
+      "is_preorder": false,
+      "seasonality_match": 86,
+      "competitor_avg_price": 114448,
+      "tags": [
+        "#여성의류",
+        "#29CM",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "29CM 여성의류 베스트(실시간) 8위",
+        "display-bff-api 스냅샷"
+      ],
+      "ai_summary": [
+        "29CM 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7,
+      "success_prob": 88,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "29cm_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 8,
+      "prediction_momentum_score": 69,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)",
+        "초가을 시즌 키워드"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장) · 초가을 시즌 키워드",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_wconcept_1",
+      "platform_rank": 10,
+      "name": "(우먼)파인 캐시미어 100 홀가먼트 브이넥 니트 - 7 COLOR",
+      "brand": "수아레 우먼",
+      "platform": "W컨셉",
+      "price": 86782,
+      "discount_rate": 42,
+      "img_url": "https://product-image.wconcept.co.kr/productimg/image/img1/97/309050097_EK91523.jpg",
+      "product_url": "https://m.wconcept.co.kr/Product/309050097",
+      "base_wish": 3838,
+      "review_count": 50,
+      "review_rating": 5,
+      "brand_pop": 93,
+      "view_count": 56800,
+      "cart_count": 4380,
+      "is_preorder": false,
+      "seasonality_match": 93,
+      "competitor_avg_price": 99799,
+      "tags": [
+        "#여성의류",
+        "#W컨셉",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "W컨셉 여성 일간 베스트(실시간) 1위",
+        "찜 3,838 · display-bff 스냅샷"
+      ],
+      "ai_summary": [
+        "W컨셉 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·리뷰는 실측, 조회·장바구니는 추정 보조지표입니다."
+      ],
+      "cart_ratio": 7.8,
+      "success_prob": 95,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "wconcept_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 1,
+      "prediction_momentum_score": 66.6,
+      "prediction_signals": [
+        "순위 +5계단↑(7일)",
+        "초가을 시즌 키워드",
+        "리뷰 +1150%↑"
+      ],
+      "prediction_hint": "순위 +5계단↑(7일) · 초가을 시즌 키워드",
+      "prediction_velocity_delta": 5,
+      "prediction_growth_pct": 1150,
+      "prediction_is_new": false,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_queenit_8",
+      "platform_rank": 11,
+      "name": "[1+1][신상컬러추가] 예시카 투웨이 집업 후드 비스코스 가디건 YI1KC012",
+      "brand": "예시카",
+      "platform": "퀸잇",
+      "price": 78900,
+      "discount_rate": 60,
+      "img_url": "https://image.queenit.kr/product/asset/v1/upload/56a404f3df424cfab3f74eeefb8dfa76.jpg",
+      "product_url": "https://web.queenit.kr/products/280173d1a8a8c3f0b8ba6fb31ddf0110",
+      "review_count": 836,
+      "review_rating": 4.6,
+      "base_wish": 25000,
+      "brand_pop": 72,
+      "view_count": 20400,
+      "cart_count": 1440,
+      "is_preorder": false,
+      "seasonality_match": 86,
+      "competitor_avg_price": 90735,
+      "tags": [
+        "#여성의류",
+        "#퀸잇",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "퀸잇 랭킹(실시간) 8위",
+        "api.queenit.kr 수확"
+      ],
+      "ai_summary": [
+        "퀸잇 랭킹 페이지 수확 스냅샷입니다.",
+        "리뷰수·평점은 실측, 찜·조회·장바구니는 추정입니다."
+      ],
+      "cart_ratio": 7,
+      "success_prob": 88,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "queenit_ranking_harvest",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 8,
+      "prediction_momentum_score": 62.7,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)",
+        "초가을 시즌 키워드"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장) · 초가을 시즌 키워드",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_wconcept_9",
+      "platform_rank": 12,
+      "name": "(우먼)파인 캐시미어 100 홀가먼트 니트- 13 COLOR",
+      "brand": "수아레 우먼",
+      "platform": "W컨셉",
+      "price": 86782,
+      "discount_rate": 42,
+      "img_url": "https://product-image.wconcept.co.kr/productimg/image/img1/96/309050096_PC42493.jpg",
+      "product_url": "https://m.wconcept.co.kr/Product/309050096",
+      "base_wish": 369,
+      "review_count": 15,
+      "review_rating": 5,
+      "brand_pop": 69,
+      "view_count": 15200,
+      "cart_count": 1020,
+      "is_preorder": false,
+      "seasonality_match": 85,
+      "competitor_avg_price": 99799,
+      "tags": [
+        "#여성의류",
+        "#W컨셉",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "W컨셉 여성 일간 베스트(실시간) 9위",
+        "찜 369 · display-bff 스냅샷"
+      ],
+      "ai_summary": [
+        "W컨셉 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·리뷰는 실측, 조회·장바구니는 추정 보조지표입니다."
+      ],
+      "cart_ratio": 6.8,
+      "success_prob": 87,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "wconcept_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 9,
+      "prediction_momentum_score": 56.9,
+      "prediction_signals": [
+        "신규 진입(랭킹 첫 등장)",
+        "초가을 시즌 키워드"
+      ],
+      "prediction_hint": "신규 진입(랭킹 첫 등장) · 초가을 시즌 키워드",
+      "prediction_velocity_delta": null,
+      "prediction_growth_pct": null,
+      "prediction_is_new": true,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_29cm_2",
+      "platform_rank": 13,
+      "name": "[STANDARD FIT] BASIC Womens Pajama Set_Long Sleeve",
+      "brand": "울랄라 파자마",
+      "platform": "29CM",
+      "price": 24070,
+      "discount_rate": 60,
+      "img_url": "https://img.29cm.co.kr/item/202609/11f1b17525cfa0dc9127b1769b920031.jpg",
+      "product_url": "https://product.29cm.co.kr/catalog/3642559",
+      "base_wish": 10200,
+      "brand_pop": 90,
+      "view_count": 51600,
+      "cart_count": 3960,
+      "is_preorder": false,
+      "seasonality_match": 92,
+      "competitor_avg_price": 27680,
+      "tags": [
+        "#여성의류",
+        "#29CM",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "29CM 여성의류 베스트(실시간) 2위",
+        "display-bff-api 스냅샷"
+      ],
+      "ai_summary": [
+        "29CM 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.7,
+      "success_prob": 94,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "29cm_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 2,
+      "prediction_momentum_score": 56.8,
+      "prediction_signals": [
+        "순위 +6계단↑(7일)"
+      ],
+      "prediction_hint": "순위 +6계단↑(7일)",
+      "prediction_velocity_delta": 6,
+      "prediction_growth_pct": null,
+      "prediction_is_new": false,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_29cm_1",
+      "platform_rank": 14,
+      "name": "[uni] 티세르 FW 신상 피치기모 홈웨어 파자마 모음전 12colors",
+      "brand": "티세르",
+      "platform": "29CM",
+      "price": 23830,
+      "discount_rate": 60,
+      "img_url": "https://img.29cm.co.kr/item/202609/11f1bca13dc4cc378aaed1e3d2530fcb.jpg",
+      "product_url": "https://product.29cm.co.kr/catalog/4229975",
+      "base_wish": 11100,
+      "brand_pop": 93,
+      "view_count": 56800,
+      "cart_count": 4380,
+      "is_preorder": false,
+      "seasonality_match": 93,
+      "competitor_avg_price": 27404,
+      "tags": [
+        "#여성의류",
+        "#29CM",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "29CM 여성의류 베스트(실시간) 1위",
+        "display-bff-api 스냅샷"
+      ],
+      "ai_summary": [
+        "29CM 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.8,
+      "success_prob": 95,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "29cm_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 1,
+      "prediction_momentum_score": 53.4,
+      "prediction_signals": [
+        "순위 +4계단↑(7일)",
+        "초가을 시즌 키워드"
+      ],
+      "prediction_hint": "순위 +4계단↑(7일) · 초가을 시즌 키워드",
+      "prediction_velocity_delta": 4,
+      "prediction_growth_pct": null,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_wconcept_2",
+      "platform_rank": 15,
+      "name": "라운드 슬림핏 니트 A라인 스커트 셋업 (XO4OW009L0)",
+      "brand": "보니스팍스",
+      "platform": "W컨셉",
+      "price": 37905,
+      "discount_rate": 61,
+      "img_url": "https://product-image.wconcept.co.kr/productimg/image/img1/11/308926911_GM79349.jpg",
+      "product_url": "https://m.wconcept.co.kr/Product/308926911",
+      "base_wish": 1402,
+      "review_count": 6,
+      "review_rating": 4.7,
+      "brand_pop": 90,
+      "view_count": 51600,
+      "cart_count": 3960,
+      "is_preorder": false,
+      "seasonality_match": 92,
+      "competitor_avg_price": 43591,
+      "tags": [
+        "#여성의류",
+        "#W컨셉",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "W컨셉 여성 일간 베스트(실시간) 2위",
+        "찜 1,402 · display-bff 스냅샷"
+      ],
+      "ai_summary": [
+        "W컨셉 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·리뷰는 실측, 조회·장바구니는 추정 보조지표입니다."
+      ],
+      "cart_ratio": 7.7,
+      "success_prob": 94,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "wconcept_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 2,
+      "prediction_momentum_score": 46.9,
+      "prediction_signals": [
+        "순위 +4계단↑(7일)",
+        "초가을 시즌 키워드",
+        "찜 +23%↑"
+      ],
+      "prediction_hint": "순위 +4계단↑(7일) · 초가을 시즌 키워드",
+      "prediction_velocity_delta": 4,
+      "prediction_growth_pct": 23,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_wconcept_7",
+      "platform_rank": 16,
+      "name": "[W컨셉 단독][1+1][2PACK] [19차 리오더] 마이 애티튜드 니트 가디건_(8color)",
+      "brand": "로브로브",
+      "platform": "W컨셉",
+      "price": 98040,
+      "discount_rate": 62,
+      "img_url": "https://product-image.wconcept.co.kr/productimg/image/img1/37/307665237_DB75749.jpg",
+      "product_url": "https://m.wconcept.co.kr/Product/307665237",
+      "base_wish": 4463,
+      "review_count": 3107,
+      "review_rating": 4.9,
+      "brand_pop": 75,
+      "view_count": 25600,
+      "cart_count": 1860,
+      "is_preorder": false,
+      "seasonality_match": 87,
+      "competitor_avg_price": 112746,
+      "tags": [
+        "#여성의류",
+        "#W컨셉",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "W컨셉 여성 일간 베스트(실시간) 7위",
+        "찜 4,463 · display-bff 스냅샷"
+      ],
+      "ai_summary": [
+        "W컨셉 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·리뷰는 실측, 조회·장바구니는 추정 보조지표입니다."
+      ],
+      "cart_ratio": 7.1,
+      "success_prob": 89,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "wconcept_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 7,
+      "prediction_momentum_score": 45.2,
+      "prediction_signals": [
+        "순위 +3계단↑(7일)",
+        "초가을 시즌 키워드",
+        "찜 +25%↑"
+      ],
+      "prediction_hint": "순위 +3계단↑(7일) · 초가을 시즌 키워드",
+      "prediction_velocity_delta": 3,
+      "prediction_growth_pct": 25,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_queenit_1",
+      "platform_rank": 17,
+      "name": "[양면착용] 웨슬리 리버시블 양털 점퍼",
+      "brand": "키첼",
+      "platform": "퀸잇",
+      "price": 39900,
+      "discount_rate": 72,
+      "img_url": "https://image.queenit.kr/product/asset/v1/upload/25d3c4392836407c84810164cb2c64ac.jpg",
+      "product_url": "https://web.queenit.kr/products/8d1647f38c5e7309a4799de12421a3ea",
+      "review_count": 291,
+      "review_rating": 4.3,
+      "base_wish": 25000,
+      "brand_pop": 93,
+      "view_count": 56800,
+      "cart_count": 4380,
+      "is_preorder": false,
+      "seasonality_match": 93,
+      "competitor_avg_price": 45885,
+      "tags": [
+        "#여성의류",
+        "#퀸잇",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "퀸잇 랭킹(실시간) 1위",
+        "api.queenit.kr 수확"
+      ],
+      "ai_summary": [
+        "퀸잇 랭킹 페이지 수확 스냅샷입니다.",
+        "리뷰수·평점은 실측, 찜·조회·장바구니는 추정입니다."
+      ],
+      "cart_ratio": 7.8,
+      "success_prob": 95,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "queenit_ranking_harvest",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 1,
+      "prediction_momentum_score": 42.5,
+      "prediction_signals": [
+        "순위 +1계단↑(7일)",
+        "초가을 시즌 키워드",
+        "리뷰 +43%↑"
+      ],
+      "prediction_hint": "순위 +1계단↑(7일) · 초가을 시즌 키워드",
+      "prediction_velocity_delta": 1,
+      "prediction_growth_pct": 43,
+      "prediction_is_new": false,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_29cm_3",
+      "platform_rank": 18,
+      "name": "[MD추천] 루베리 플라워 여성 잠옷 세트 홈웨어 파자마",
+      "brand": "코즈넉",
+      "platform": "29CM",
+      "price": 29490,
+      "discount_rate": 61,
+      "img_url": "https://img.29cm.co.kr/item/202607/11f18cb72b94ed7b964565305eaeebc3.jpg",
+      "product_url": "https://product.29cm.co.kr/catalog/4111338",
+      "base_wish": 9300,
+      "brand_pop": 87,
+      "view_count": 46400,
+      "cart_count": 3540,
+      "is_preorder": false,
+      "seasonality_match": 91,
+      "competitor_avg_price": 33914,
+      "tags": [
+        "#여성의류",
+        "#29CM",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "29CM 여성의류 베스트(실시간) 3위",
+        "display-bff-api 스냅샷"
+      ],
+      "ai_summary": [
+        "29CM 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.6,
+      "success_prob": 93,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "29cm_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 3,
+      "prediction_momentum_score": 42.1,
+      "prediction_signals": [
+        "순위 +4계단↑(7일)"
+      ],
+      "prediction_hint": "순위 +4계단↑(7일)",
+      "prediction_velocity_delta": 4,
+      "prediction_growth_pct": null,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_wconcept_4",
+      "platform_rank": 19,
+      "name": "[Premium] Cashmere-blend Handmade Coat_3color",
+      "brand": "프론트로우",
+      "platform": "W컨셉",
+      "price": 424250,
+      "discount_rate": 39,
+      "img_url": "https://product-image.wconcept.co.kr/productimg/image/img1/05/301799005_ON16126.jpg",
+      "product_url": "https://m.wconcept.co.kr/Product/301799005",
+      "base_wish": 28615,
+      "review_count": 2799,
+      "review_rating": 4.9,
+      "brand_pop": 84,
+      "view_count": 41200,
+      "cart_count": 3120,
+      "is_preorder": false,
+      "seasonality_match": 90,
+      "competitor_avg_price": 487887,
+      "tags": [
+        "#여성의류",
+        "#W컨셉",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "W컨셉 여성 일간 베스트(실시간) 4위",
+        "찜 28,615 · display-bff 스냅샷"
+      ],
+      "ai_summary": [
+        "W컨셉 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·리뷰는 실측, 조회·장바구니는 추정 보조지표입니다."
+      ],
+      "cart_ratio": 7.4,
+      "success_prob": 92,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "wconcept_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 4,
+      "prediction_momentum_score": 37.2,
+      "prediction_signals": [
+        "순위 +4계단↑(7일)"
+      ],
+      "prediction_hint": "순위 +4계단↑(7일)",
+      "prediction_velocity_delta": 4,
+      "prediction_growth_pct": 0,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_queenit_4",
+      "platform_rank": 20,
+      "name": "글리즈 텐셀 투버튼 테일러드 자켓",
+      "brand": "스타일온미",
+      "platform": "퀸잇",
+      "price": 85010,
+      "discount_rate": 64,
+      "img_url": "https://image.queenit.kr/product/asset/v1/upload/98352d9162a742c986d9906f406a173e.jpg",
+      "product_url": "https://web.queenit.kr/products/826696330c27a77e8907a06bba1acb2a",
+      "review_count": 73,
+      "review_rating": 4.7,
+      "base_wish": 16600,
+      "brand_pop": 84,
+      "view_count": 41200,
+      "cart_count": 3120,
+      "is_preorder": false,
+      "seasonality_match": 90,
+      "competitor_avg_price": 97761,
+      "tags": [
+        "#여성의류",
+        "#퀸잇",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "퀸잇 랭킹(실시간) 4위",
+        "api.queenit.kr 수확"
+      ],
+      "ai_summary": [
+        "퀸잇 랭킹 페이지 수확 스냅샷입니다.",
+        "리뷰수·평점은 실측, 찜·조회·장바구니는 추정입니다."
+      ],
+      "cart_ratio": 7.4,
+      "success_prob": 92,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "queenit_ranking_harvest",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 4,
+      "prediction_momentum_score": 35.2,
+      "prediction_signals": [
+        "초가을 시즌 키워드",
+        "리뷰 +121%↑"
+      ],
+      "prediction_hint": "초가을 시즌 키워드 · 리뷰 +121%↑",
+      "prediction_velocity_delta": 0,
+      "prediction_growth_pct": 121,
+      "prediction_is_new": false,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_queenit_7",
+      "platform_rank": 21,
+      "name": "[블랙추가]모브 뒤 리본 포인트 시스루 셔츠",
+      "brand": "예뻐 너",
+      "platform": "퀸잇",
+      "price": 39900,
+      "discount_rate": 66,
+      "img_url": "https://image.queenit.kr/product/asset/v1/upload/4c8507d079354a73a75c06e2087b45ab.jpg",
+      "product_url": "https://web.queenit.kr/products/57aa6b5904bd6d656fc7adb3533408f3",
+      "review_count": 155,
+      "review_rating": 4.2,
+      "base_wish": 25000,
+      "brand_pop": 75,
+      "view_count": 25600,
+      "cart_count": 1860,
+      "is_preorder": false,
+      "seasonality_match": 87,
+      "competitor_avg_price": 45885,
+      "tags": [
+        "#여성의류",
+        "#퀸잇",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "퀸잇 랭킹(실시간) 7위",
+        "api.queenit.kr 수확"
+      ],
+      "ai_summary": [
+        "퀸잇 랭킹 페이지 수확 스냅샷입니다.",
+        "리뷰수·평점은 실측, 찜·조회·장바구니는 추정입니다."
+      ],
+      "cart_ratio": 7.1,
+      "success_prob": 89,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "queenit_ranking_harvest",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 7,
+      "prediction_momentum_score": 35.1,
+      "prediction_signals": [
+        "순위 +2계단↑(7일)",
+        "리뷰 +55%↑"
+      ],
+      "prediction_hint": "순위 +2계단↑(7일) · 리뷰 +55%↑",
+      "prediction_velocity_delta": 2,
+      "prediction_growth_pct": 55,
+      "prediction_is_new": false,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_wconcept_5",
+      "platform_rank": 22,
+      "name": "Faux Leather Double Placket Blouson Zip-up Jumper SL6AM802-10",
+      "brand": "루에브르",
+      "platform": "W컨셉",
+      "price": 179143,
+      "discount_rate": 38,
+      "img_url": "https://product-image.wconcept.co.kr/productimg/image/img1/54/308979154_GJ37774.jpg",
+      "product_url": "https://m.wconcept.co.kr/Product/308979154",
+      "base_wish": 885,
+      "review_count": 3,
+      "review_rating": 5,
+      "brand_pop": 81,
+      "view_count": 36000,
+      "cart_count": 2700,
+      "is_preorder": false,
+      "seasonality_match": 89,
+      "competitor_avg_price": 206014,
+      "tags": [
+        "#여성의류",
+        "#W컨셉",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "W컨셉 여성 일간 베스트(실시간) 5위",
+        "찜 885 · display-bff 스냅샷"
+      ],
+      "ai_summary": [
+        "W컨셉 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·리뷰는 실측, 조회·장바구니는 추정 보조지표입니다."
+      ],
+      "cart_ratio": 7.3,
+      "success_prob": 91,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "wconcept_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 5,
+      "prediction_momentum_score": 33.6,
+      "prediction_signals": [
+        "순위 +1계단↑(7일)",
+        "리뷰 +50%↑"
+      ],
+      "prediction_hint": "순위 +1계단↑(7일) · 리뷰 +50%↑",
+      "prediction_velocity_delta": 1,
+      "prediction_growth_pct": 50,
+      "prediction_is_new": false,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_wconcept_6",
+      "platform_rank": 23,
+      "name": "엘레강스 레이스 배색 새틴 민소매 (GQCLW001D)",
+      "brand": "지지피엑스",
+      "platform": "W컨셉",
+      "price": 19950,
+      "discount_rate": 66,
+      "img_url": "https://product-image.wconcept.co.kr/productimg/image/img1/04/308805404_VC20269.jpg",
+      "product_url": "https://m.wconcept.co.kr/Product/308805404",
+      "base_wish": 15108,
+      "review_count": 374,
+      "review_rating": 4.9,
+      "brand_pop": 78,
+      "view_count": 30800,
+      "cart_count": 2280,
+      "is_preorder": false,
+      "seasonality_match": 88,
+      "competitor_avg_price": 22943,
+      "tags": [
+        "#여성의류",
+        "#W컨셉",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "W컨셉 여성 일간 베스트(실시간) 6위",
+        "찜 15,108 · display-bff 스냅샷"
+      ],
+      "ai_summary": [
+        "W컨셉 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·리뷰는 실측, 조회·장바구니는 추정 보조지표입니다."
+      ],
+      "cart_ratio": 7.2,
+      "success_prob": 90,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "wconcept_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 6,
+      "prediction_momentum_score": 31.6,
+      "prediction_signals": [
+        "리뷰 +274%↑"
+      ],
+      "prediction_hint": "리뷰 +274%↑",
+      "prediction_velocity_delta": -4,
+      "prediction_growth_pct": 274,
+      "prediction_is_new": false,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_queenit_2",
+      "platform_rank": 24,
+      "name": "[신규컬러입고] 라운드넥 faux 레더 자켓_7컬러 택1",
+      "brand": "질리오띠",
+      "platform": "퀸잇",
+      "price": 39900,
+      "discount_rate": 59,
+      "img_url": "https://image.queenit.kr/asset/v1/upload/f1453fb9a448450b868f3a6834c7f689.webp",
+      "product_url": "https://web.queenit.kr/products/40d92cda4531923e4e0e6620de1948a0",
+      "review_count": 3133,
+      "review_rating": 4.7,
+      "base_wish": 25000,
+      "brand_pop": 90,
+      "view_count": 51600,
+      "cart_count": 3960,
+      "is_preorder": false,
+      "seasonality_match": 92,
+      "competitor_avg_price": 45885,
+      "tags": [
+        "#여성의류",
+        "#퀸잇",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "퀸잇 랭킹(실시간) 2위",
+        "api.queenit.kr 수확"
+      ],
+      "ai_summary": [
+        "퀸잇 랭킹 페이지 수확 스냅샷입니다.",
+        "리뷰수·평점은 실측, 찜·조회·장바구니는 추정입니다."
+      ],
+      "cart_ratio": 7.7,
+      "success_prob": 94,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "queenit_ranking_harvest",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 2,
+      "prediction_momentum_score": 28.7,
+      "prediction_signals": [
+        "순위 +1계단↑(7일)",
+        "초가을 시즌 키워드"
+      ],
+      "prediction_hint": "순위 +1계단↑(7일) · 초가을 시즌 키워드",
+      "prediction_velocity_delta": 1,
+      "prediction_growth_pct": 3,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_ms_5",
+      "platform_rank": 25,
+      "name": "[빛오 x 일리오] Black Lace layered sleeveless",
+      "brand": "일리오",
+      "platform": "무신사",
+      "price": 47700,
+      "img_url": "https://image.msscdn.net/images/goods_img/20260818/7091697/7091697_17871928316054_500.jpg",
+      "product_url": "https://www.musinsa.com/products/7091697",
+      "review_count": 2,
+      "base_wish": 2800,
+      "brand_pop": 81,
+      "view_count": 36000,
+      "cart_count": 2700,
+      "is_preorder": false,
+      "seasonality_match": 89,
+      "competitor_avg_price": 54855,
+      "tags": [
+        "#여성의류",
+        "#무신사",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "무신사 여성 랭킹(실시간) 5위",
+        "api.musinsa.com 스냅샷"
+      ],
+      "ai_summary": [
+        "공개 랭킹 API 기준 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.3,
+      "success_prob": 91,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "musinsa_ranking_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 5,
+      "prediction_momentum_score": 25.1,
+      "prediction_signals": [
+        "순위 +1계단↑(7일)"
+      ],
+      "prediction_hint": "순위 +1계단↑(7일)",
+      "prediction_velocity_delta": 1,
+      "prediction_growth_pct": null,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_queenit_3",
+      "platform_rank": 26,
+      "name": "(가을찐스판2탄) 밴딩 와이드 데님 팬츠",
+      "brand": "포레스트핏",
+      "platform": "퀸잇",
+      "price": 32300,
+      "discount_rate": 8,
+      "img_url": "https://image.queenit.kr/product/asset/v1/upload/fc793112fca6463da452090fa5126ff6.jpg",
+      "product_url": "https://web.queenit.kr/products/0ccd81309f6974bb8f010870779f0504",
+      "review_count": 5158,
+      "review_rating": 4.5,
+      "base_wish": 25000,
+      "brand_pop": 87,
+      "view_count": 46400,
+      "cart_count": 3540,
+      "is_preorder": false,
+      "seasonality_match": 91,
+      "competitor_avg_price": 37145,
+      "tags": [
+        "#여성의류",
+        "#퀸잇",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "퀸잇 랭킹(실시간) 3위",
+        "api.queenit.kr 수확"
+      ],
+      "ai_summary": [
+        "퀸잇 랭킹 페이지 수확 스냅샷입니다.",
+        "리뷰수·평점은 실측, 찜·조회·장바구니는 추정입니다."
+      ],
+      "cart_ratio": 7.6,
+      "success_prob": 93,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "queenit_ranking_harvest",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 3,
+      "prediction_momentum_score": 24.8,
+      "prediction_signals": [
+        "리뷰 +7%↑"
+      ],
+      "prediction_hint": "리뷰 +7%↑",
+      "prediction_velocity_delta": -1,
+      "prediction_growth_pct": 7,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_queenit_6",
+      "platform_rank": 27,
+      "name": "[당일발송][가을시즌]인생템 스판와이드 슬랙스",
+      "brand": "메이뜰",
+      "platform": "퀸잇",
+      "price": 32600,
+      "discount_rate": 13,
+      "img_url": "https://image.queenit.kr/product/asset/v1/upload/94383c5ce6fe49878874851bfddb1ccc.jpg",
+      "product_url": "https://web.queenit.kr/products/1a6a1450cc16c443620aaf006ebe34f6",
+      "review_count": 3371,
+      "review_rating": 4.5,
+      "base_wish": 25000,
+      "brand_pop": 78,
+      "view_count": 30800,
+      "cart_count": 2280,
+      "is_preorder": false,
+      "seasonality_match": 88,
+      "competitor_avg_price": 37490,
+      "tags": [
+        "#여성의류",
+        "#퀸잇",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "퀸잇 랭킹(실시간) 6위",
+        "api.queenit.kr 수확"
+      ],
+      "ai_summary": [
+        "퀸잇 랭킹 페이지 수확 스냅샷입니다.",
+        "리뷰수·평점은 실측, 찜·조회·장바구니는 추정입니다."
+      ],
+      "cart_ratio": 7.2,
+      "success_prob": 90,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "queenit_ranking_harvest",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 6,
+      "prediction_momentum_score": 24.8,
+      "prediction_signals": [
+        "순위 +2계단↑(7일)"
+      ],
+      "prediction_hint": "순위 +2계단↑(7일)",
+      "prediction_velocity_delta": 2,
+      "prediction_growth_pct": 5,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_queenit_10",
+      "platform_rank": 28,
+      "name": "스트라이프 카라 배색 버튼 니트 가디건(4컬러)",
+      "brand": "더온미",
+      "platform": "퀸잇",
+      "price": 31920,
+      "discount_rate": 64,
+      "img_url": "https://image.queenit.kr/product/asset/v1/upload/7d21ad86546e4c72bf4d3e5a8092997f.jpg",
+      "product_url": "https://web.queenit.kr/products/6ea04137fda07a2a4ee7430149707189",
+      "review_count": 45,
+      "review_rating": 4.4,
+      "base_wish": 11000,
+      "brand_pop": 66,
+      "view_count": 10000,
+      "cart_count": 800,
+      "is_preorder": false,
+      "seasonality_match": 84,
+      "competitor_avg_price": 36708,
+      "tags": [
+        "#여성의류",
+        "#퀸잇",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "퀸잇 랭킹(실시간) 10위",
+        "api.queenit.kr 수확"
+      ],
+      "ai_summary": [
+        "퀸잇 랭킹 페이지 수확 스냅샷입니다.",
+        "리뷰수·평점은 실측, 찜·조회·장바구니는 추정입니다."
+      ],
+      "cart_ratio": 6.7,
+      "success_prob": 86,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "queenit_ranking_harvest",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 10,
+      "prediction_momentum_score": 24.8,
+      "prediction_signals": [
+        "초가을 시즌 키워드",
+        "리뷰 +275%↑"
+      ],
+      "prediction_hint": "초가을 시즌 키워드 · 리뷰 +275%↑",
+      "prediction_velocity_delta": 0,
+      "prediction_growth_pct": 275,
+      "prediction_is_new": false,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_wconcept_8",
+      "platform_rank": 29,
+      "name": "LUNE FUR REVERSIBLE BOMBER_ASH KHAKI",
+      "brand": "망고매니플리즈",
+      "platform": "W컨셉",
+      "price": 215878,
+      "discount_rate": 27,
+      "img_url": "https://product-image.wconcept.co.kr/productimg/image/img1/52/309066852_KG13781.jpg",
+      "product_url": "https://m.wconcept.co.kr/Product/309066852",
+      "base_wish": 552,
+      "review_count": 0,
+      "review_rating": 0,
+      "brand_pop": 72,
+      "view_count": 20400,
+      "cart_count": 1440,
+      "is_preorder": false,
+      "seasonality_match": 86,
+      "competitor_avg_price": 248260,
+      "tags": [
+        "#여성의류",
+        "#W컨셉",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "W컨셉 여성 일간 베스트(실시간) 8위",
+        "찜 552 · display-bff 스냅샷"
+      ],
+      "ai_summary": [
+        "W컨셉 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·리뷰는 실측, 조회·장바구니는 추정 보조지표입니다."
+      ],
+      "cart_ratio": 7,
+      "success_prob": 88,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "wconcept_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 8,
+      "prediction_momentum_score": 24.6,
+      "prediction_signals": [
+        "찜 +105%↑"
+      ],
+      "prediction_hint": "찜 +105%↑",
+      "prediction_velocity_delta": -7,
+      "prediction_growth_pct": 105,
+      "prediction_is_new": false,
+      "roem_copy_priority": true
+    },
+    {
+      "id": "rank_today_ms_2",
+      "platform_rank": 30,
+      "name": "MORIN LACE SLEEVELESS (GRAY)",
+      "brand": "폴뉴아",
+      "platform": "무신사",
+      "price": 42360,
+      "img_url": "https://image.msscdn.net/images/goods_img/20260909/7290183/7290183_17889435835635_500.jpg",
+      "product_url": "https://www.musinsa.com/products/7290183",
+      "review_count": 1,
+      "base_wish": 2400,
+      "brand_pop": 90,
+      "view_count": 51600,
+      "cart_count": 3960,
+      "is_preorder": false,
+      "seasonality_match": 92,
+      "competitor_avg_price": 48714,
+      "tags": [
+        "#여성의류",
+        "#무신사",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "무신사 여성 랭킹(실시간) 2위",
+        "api.musinsa.com 스냅샷"
+      ],
+      "ai_summary": [
+        "공개 랭킹 API 기준 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.7,
+      "success_prob": 94,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "musinsa_ranking_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 2,
+      "prediction_momentum_score": 21.2,
+      "prediction_signals": [
+        "순위 +1계단↑(7일)"
+      ],
+      "prediction_hint": "순위 +1계단↑(7일)",
+      "prediction_velocity_delta": 1,
+      "prediction_growth_pct": 0,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_queenit_5",
+      "platform_rank": 31,
+      "name": "앨도나 데님레이어드 니트 가디건",
+      "brand": "예뻐 너",
+      "platform": "퀸잇",
+      "price": 39900,
+      "discount_rate": 66,
+      "img_url": "https://image.queenit.kr/product/asset/v1/upload/e929f843a62b48739854ff50426d30cb.jpg",
+      "product_url": "https://web.queenit.kr/products/2e6a0cf6cc5a3c62b9a430e381e8cc8b",
+      "review_count": 23,
+      "review_rating": 4.6,
+      "base_wish": 6600,
+      "brand_pop": 81,
+      "view_count": 36000,
+      "cart_count": 2700,
+      "is_preorder": false,
+      "seasonality_match": 89,
+      "competitor_avg_price": 45885,
+      "tags": [
+        "#여성의류",
+        "#퀸잇",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "퀸잇 랭킹(실시간) 5위",
+        "api.queenit.kr 수확"
+      ],
+      "ai_summary": [
+        "퀸잇 랭킹 페이지 수확 스냅샷입니다.",
+        "리뷰수·평점은 실측, 찜·조회·장바구니는 추정입니다."
+      ],
+      "cart_ratio": 7.3,
+      "success_prob": 91,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "queenit_ranking_harvest",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 5,
+      "prediction_momentum_score": 14.8,
+      "prediction_signals": [
+        "초가을 시즌 키워드",
+        "리뷰 +10%↑"
+      ],
+      "prediction_hint": "초가을 시즌 키워드 · 리뷰 +10%↑",
+      "prediction_velocity_delta": -2,
+      "prediction_growth_pct": 10,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_wconcept_10",
+      "platform_rank": 32,
+      "name": "[NEW컬러추가][단독] Oversized tweed jacket SW5SJ102_3color",
+      "brand": "루에브르",
+      "platform": "W컨셉",
+      "price": 149844,
+      "discount_rate": 42,
+      "img_url": "https://product-image.wconcept.co.kr/productimg/image/img1/27/306362127_CB73724.jpg",
+      "product_url": "https://m.wconcept.co.kr/Product/306362127",
+      "base_wish": 37017,
+      "review_count": 927,
+      "review_rating": 4.9,
+      "brand_pop": 66,
+      "view_count": 10000,
+      "cart_count": 800,
+      "is_preorder": false,
+      "seasonality_match": 84,
+      "competitor_avg_price": 172321,
+      "tags": [
+        "#여성의류",
+        "#W컨셉",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "W컨셉 여성 일간 베스트(실시간) 10위",
+        "찜 37,017 · display-bff 스냅샷"
+      ],
+      "ai_summary": [
+        "W컨셉 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·리뷰는 실측, 조회·장바구니는 추정 보조지표입니다."
+      ],
+      "cart_ratio": 6.7,
+      "success_prob": 86,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "wconcept_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 10,
+      "prediction_momentum_score": 13.6,
+      "prediction_signals": [
+        "리뷰 +5%↑"
+      ],
+      "prediction_hint": "리뷰 +5%↑",
+      "prediction_velocity_delta": -4,
+      "prediction_growth_pct": 5,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_queenit_9",
+      "platform_rank": 33,
+      "name": "(노컷진1탄) 와이드 청바지 5컬러",
+      "brand": "포레스트핏",
+      "platform": "퀸잇",
+      "price": 31255,
+      "discount_rate": 6,
+      "img_url": "https://image.queenit.kr/product/asset/v1/upload/79a2512e6e464442944e4a141caab9f7.jpg",
+      "product_url": "https://web.queenit.kr/products/524e1cf1cfdc69cfc9a5880a50adbfd7",
+      "review_count": 458,
+      "review_rating": 4.6,
+      "base_wish": 25000,
+      "brand_pop": 69,
+      "view_count": 15200,
+      "cart_count": 1020,
+      "is_preorder": false,
+      "seasonality_match": 85,
+      "competitor_avg_price": 35943,
+      "tags": [
+        "#여성의류",
+        "#퀸잇",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "퀸잇 랭킹(실시간) 9위",
+        "api.queenit.kr 수확"
+      ],
+      "ai_summary": [
+        "퀸잇 랭킹 페이지 수확 스냅샷입니다.",
+        "리뷰수·평점은 실측, 찜·조회·장바구니는 추정입니다."
+      ],
+      "cart_ratio": 6.8,
+      "success_prob": 87,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "queenit_ranking_harvest",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 9,
+      "prediction_momentum_score": 12.8,
+      "prediction_signals": [
+        "순위 +1계단↑(7일)",
+        "리뷰 +11%↑"
+      ],
+      "prediction_hint": "순위 +1계단↑(7일) · 리뷰 +11%↑",
+      "prediction_velocity_delta": 1,
+      "prediction_growth_pct": 11,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_29cm_6",
+      "platform_rank": 34,
+      "name": "[은현 PICK] Reversible Mellow Fleece Jacket-Grey",
+      "brand": "비터셀즈",
+      "platform": "29CM",
+      "price": 91860,
+      "discount_rate": 23,
+      "img_url": "https://img.29cm.co.kr/item/202610/11f1c2ab8a46120a8aaea3d000e0be77.jpg",
+      "product_url": "https://product.29cm.co.kr/catalog/4234558",
+      "base_wish": 6600,
+      "brand_pop": 78,
+      "view_count": 30800,
+      "cart_count": 2280,
+      "is_preorder": false,
+      "seasonality_match": 88,
+      "competitor_avg_price": 105639,
+      "tags": [
+        "#여성의류",
+        "#29CM",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "29CM 여성의류 베스트(실시간) 6위",
+        "display-bff-api 스냅샷"
+      ],
+      "ai_summary": [
+        "29CM 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 7.2,
+      "success_prob": 90,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "29cm_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 6,
+      "prediction_momentum_score": 10.7,
+      "prediction_signals": [],
+      "prediction_hint": "조합 신호 기준",
+      "prediction_velocity_delta": 0,
+      "prediction_growth_pct": null,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_29cm_9",
+      "platform_rank": 35,
+      "name": "[13차 리오더]W/M-65 Fishtail Bomber Jacket Padding Coat(3color)",
+      "brand": "웬즈데이오아시스",
+      "platform": "29CM",
+      "price": 124200,
+      "discount_rate": 33,
+      "img_url": "https://img.29cm.co.kr/item/202412/11efb8ee62cf3afaad1b791d4021cb3e.jpg",
+      "product_url": "https://product.29cm.co.kr/catalog/2986400",
+      "base_wish": 3900,
+      "brand_pop": 69,
+      "view_count": 15200,
+      "cart_count": 1020,
+      "is_preorder": false,
+      "seasonality_match": 85,
+      "competitor_avg_price": 142830,
+      "tags": [
+        "#여성의류",
+        "#29CM",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "29CM 여성의류 베스트(실시간) 9위",
+        "display-bff-api 스냅샷"
+      ],
+      "ai_summary": [
+        "29CM 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 6.8,
+      "success_prob": 87,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "29cm_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 9,
+      "prediction_momentum_score": 4.3,
+      "prediction_signals": [],
+      "prediction_hint": "조합 신호 기준",
+      "prediction_velocity_delta": -2,
+      "prediction_growth_pct": null,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    },
+    {
+      "id": "rank_today_29cm_10",
+      "platform_rank": 36,
+      "name": "[5th] Velvet Capri Pants (Black)",
+      "brand": "누아",
+      "platform": "29CM",
+      "price": 108000,
+      "discount_rate": 0,
+      "img_url": "https://img.29cm.co.kr/item/202609/11f1b71d017316178aae4bb7a25a7e59.jpg",
+      "product_url": "https://product.29cm.co.kr/catalog/4207981",
+      "base_wish": 3000,
+      "brand_pop": 66,
+      "view_count": 10000,
+      "cart_count": 800,
+      "is_preorder": false,
+      "seasonality_match": 84,
+      "competitor_avg_price": 124200,
+      "tags": [
+        "#여성의류",
+        "#29CM",
+        "#오늘랭킹"
+      ],
+      "key_details": [
+        "[떡상 후보] 순위상승·관심급증·신상침투 조합",
+        "29CM 여성의류 베스트(실시간) 10위",
+        "display-bff-api 스냅샷"
+      ],
+      "ai_summary": [
+        "29CM 베스트 API 기준 실시간 스냅샷입니다.",
+        "찜·조회·장바구니 수치는 추정 보조지표입니다(실측 아님)."
+      ],
+      "cart_ratio": 6.7,
+      "success_prob": 86,
+      "production_alert": false,
+      "gender": "women",
+      "audience": "adult",
+      "data_source": "29cm_best_api",
+      "metrics_estimated": true,
+      "estimated_fields": [
+        "base_wish",
+        "brand_pop",
+        "view_count",
+        "cart_count",
+        "competitor_avg_price",
+        "cart_ratio",
+        "success_prob",
+        "seasonality_match"
+      ],
+      "_prediction_sources": [
+        "ranking"
+      ],
+      "source_rank": 10,
+      "prediction_momentum_score": 2.1,
+      "prediction_signals": [],
+      "prediction_hint": "조합 신호 기준",
+      "prediction_velocity_delta": 0,
+      "prediction_growth_pct": null,
+      "prediction_is_new": false,
+      "roem_copy_priority": false
+    }
+  ],
   "2026.10.17": [
     {
       "id": "rank_today_29cm_2",
